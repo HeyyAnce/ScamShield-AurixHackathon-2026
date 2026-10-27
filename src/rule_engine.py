@@ -13,14 +13,6 @@ from pydantic import BaseModel, Field
 from src.config import OFFICIAL_DOMAINS_PATH, USE_UNCHECKED_DOMAINS
 
 
-class RuleFinding(BaseModel):
-    """Detailed record of a single heuristic rule trigger."""
-    category: str
-    icon: str
-    severity: str  # CRITICAL, HIGH, MEDIUM, LOW
-    details: List[str]
-
-
 class RuleAnalysisResult(BaseModel):
     """Aggregate output from rule-based heuristic analysis."""
     score: int
@@ -33,17 +25,20 @@ class RuleAnalysisResult(BaseModel):
     hard_negative_reasons: List[str] = Field(default_factory=list)
 
 
-def load_official_domain_lists() -> Tuple[Set[str], List[str]]:
+def load_official_domain_lists(domains_path: Optional[Path] = None) -> Tuple[Set[str], List[str]]:
     """
-    Loads official domains from data/dataset/legit_domains.csv.
+    Loads official domains from legit_domains.csv (defaults to data/dataset/legit_domains.csv).
     Returns (exact_domains, zone_endings). Rows marked "unchecked" are skipped
     unless USE_UNCHECKED_DOMAINS is True.
     """
+    path = Path(domains_path) if domains_path else OFFICIAL_DOMAINS_PATH
+    if not path.is_file():
+        path = OFFICIAL_DOMAINS_PATH
     domains: Set[str] = set()
     zones: List[str] = []
-    if OFFICIAL_DOMAINS_PATH.exists():
+    if path.exists():
         try:
-            df = pd.read_csv(OFFICIAL_DOMAINS_PATH, encoding="utf-8-sig", dtype=str, keep_default_na=False)
+            df = pd.read_csv(path, encoding="utf-8-sig", dtype=str, keep_default_na=False)
             for _, row in df.iterrows():
                 if row.get("status", "").strip().lower() != "checked" and not USE_UNCHECKED_DOMAINS:
                     continue
@@ -60,9 +55,9 @@ def load_official_domain_lists() -> Tuple[Set[str], List[str]]:
     return domains, zones
 
 
-def load_official_domains() -> Set[str]:
+def load_official_domains(domains_path: Optional[Path] = None) -> Set[str]:
     """Exact official domains only (kept for compatibility)."""
-    return load_official_domain_lists()[0]
+    return load_official_domain_lists(domains_path)[0]
 
 
 def is_official_host(host: str, domains: Set[str], zones: List[str]) -> bool:
@@ -81,8 +76,8 @@ def is_official_host(host: str, domains: Set[str], zones: List[str]) -> bool:
 class RuleEngine:
     """Multi-lingual heuristic detection engine."""
 
-    def __init__(self):
-        self.official_domains, self.official_zones = load_official_domain_lists()
+    def __init__(self, domains_path: Optional[Path] = None):
+        self.official_domains, self.official_zones = load_official_domain_lists(domains_path)
 
     def analyze(self, text: str) -> RuleAnalysisResult:
         """

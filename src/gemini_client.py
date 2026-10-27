@@ -4,9 +4,8 @@ Integrates rule findings and dataset-derived reference examples into the AI anal
 Features structured Pydantic output, finite timeouts, and resilient error handling.
 """
 
-import json
-from typing import Dict, List, Any, Optional
-from pydantic import BaseModel, Field
+from typing import Dict, List, Any, Optional, Literal
+from pydantic import BaseModel, Field, ValidationError
 
 from src.config import MODEL_NAME, REQUEST_TIMEOUT_MS, MAX_RETRIES
 from src.rule_engine import RuleAnalysisResult
@@ -15,7 +14,7 @@ from src.reference_matcher import MatchedReference
 
 class ScamAnalysisResult(BaseModel):
     """Structured response schema for Gemini AI scam analysis."""
-    verdict: str = Field(
+    verdict: Literal["SCAM", "SUSPICIOUS", "SAFE"] = Field(
         description="Must be exactly 'SCAM', 'SUSPICIOUS', or 'SAFE'."
     )
     scam_type: str = Field(
@@ -30,7 +29,7 @@ class ScamAnalysisResult(BaseModel):
     recommended_actions: List[str] = Field(
         description="2 to 3 practical, concrete next steps the user should take immediately (e.g. block sender, do not click link, call 1930)."
     )
-    confidence: str = Field(
+    confidence: Literal["HIGH", "MEDIUM", "LOW"] = Field(
         description="Confidence level: 'HIGH', 'MEDIUM', or 'LOW'."
     )
 
@@ -148,145 +147,149 @@ Please provide your evaluation with a verdict of SCAM, SUSPICIOUS, or SAFE adher
         )
         client = genai.Client(api_key=api_key, http_options=http_opts)
 
-        config = types.GenerateContentConfig(
-            system_instruction=system_instruction,
-            response_mime_type="application/json",
-            response_schema=ScamAnalysisResult,
-        )
+        try:
+            config = types.GenerateContentConfig(
+                system_instruction=system_instruction,
+                response_mime_type="application/json",
+                response_schema=ScamAnalysisResult,
+            )
 
-        last_error_dict = None
+            last_error_dict = None
 
-        for attempt in range(MAX_RETRIES + 1):
-            try:
-                response = client.models.generate_content(
-                    model=self.model_name,
-                    contents=user_prompt,
-                    config=config,
-                )
-
-                if not response.text:
-                    return {
-                        "error_type": "EMPTY_RESPONSE",
-                        "error_title": "Empty AI Response",
-                        "error_message": "AI service returned an empty response.",
-                    }
-
+            for attempt in range(MAX_RETRIES + 1):
                 try:
-                    data = json.loads(response.text)
-                except json.JSONDecodeError:
+                    response = client.models.generate_content(
+                        model=self.model_name,
+                        contents=user_prompt,
+                        config=config,
+                    )
+
+                    if not response.text:
+                        return {
+                            "error_type": "EMPTY_RESPONSE",
+                            "error_title": "Empty AI Response",
+                            "error_message": "AI service returned an empty response.",
+                        }
+
+                    try:
+                        data = ScamAnalysisResult.model_validate_json(response.text).model_dump()
+                    except (ValidationError, ValueError):
+                        return {
+                            "error_type": "JSON_PARSE_ERROR",
+                            "error_title": "Malformed AI Output",
+                            "error_message": "AI service returned output that could not be parsed as structured JSON.",
+                        }
+
+                    # Validate and normalize fields
+                    verdict = str(data.get("verdict", "SUSPICIOUS")).upper().strip()
+                    if verdict not in ["SCAM", "SUSPICIOUS", "SAFE"]:
+                        verdict = "SUSPICIOUS"
+
                     return {
-                        "error_type": "JSON_PARSE_ERROR",
-                        "error_title": "Malformed AI Output",
-                        "error_message": "AI service returned output that could not be parsed as structured JSON.",
+                        "success": True,
+                        "is_ai": True,
+                        "model_used": self.model_name,
+                        "verdict": verdict,
+                        "scam_type": data.get("scam_type", "Suspicious Communication"),
+                        "explanation": data.get("explanation", "Please exercise caution with this message."),
+                        "red_flags": data.get("red_flags", ["Unusual communication pattern"]),
+                        "recommended_actions": data.get(
+                            "recommended_actions", ["Do not click any links", "Do not share OTP"]
+                        ),
+                        "confidence": str(data.get("confidence", "MEDIUM")).upper(),
                     }
 
-                # Validate and normalize fields
-                verdict = str(data.get("verdict", "SUSPICIOUS")).upper().strip()
-                if verdict not in ["SCAM", "SUSPICIOUS", "SAFE"]:
-                    verdict = "SUSPICIOUS"
+                except APIError as api_err:
+                    err_msg = str(api_err).lower()
+                    err_code = getattr(api_err, "code", None)
 
-                return {
-                    "success": True,
-                    "is_ai": True,
-                    "model_used": self.model_name,
-                    "verdict": verdict,
-                    "scam_type": data.get("scam_type", "Suspicious Communication"),
-                    "explanation": data.get("explanation", "Please exercise caution with this message."),
-                    "red_flags": data.get("red_flags", ["Unusual communication pattern"]),
-                    "recommended_actions": data.get(
-                        "recommended_actions", ["Do not click any links", "Do not share OTP"]
-                    ),
-                    "confidence": str(data.get("confidence", "MEDIUM")).upper(),
-                }
+                    if err_code in [400, 401, 403] or any(
+                        k in err_msg for k in ["api_key_invalid", "api key not valid", "permission_denied"]
+                    ):
+                        return {
+                            "error_type": "AUTH_ERROR",
+                            "error_title": "Authentication Error",
+                            "error_message": "AI service could not authenticate. Please verify your GEMINI_API_KEY.",
+                        }
+                    if err_code == 404 or any(
+                        k in err_msg for k in ["not found", "is not supported", "unsupported model"]
+                    ):
+                        return {
+                            "error_type": "UNSUPPORTED_MODEL",
+                            "error_title": "Model Unavailable",
+                            "error_message": f"The model '{self.model_name}' is currently unavailable.",
+                        }
+                    if err_code == 429 or any(
+                        k in err_msg for k in ["resource_exhausted", "quota", "rate limit"]
+                    ):
+                        return {
+                            "error_type": "RATE_LIMIT",
+                            "error_title": "Service Busy",
+                            "error_message": "AI service is currently experiencing high demand. Please try again shortly.",
+                        }
+                    if err_code in [408, 504] or any(
+                        k in err_msg for k in ["deadline_exceeded", "deadline expired", "timed out"]
+                    ):
+                        last_error_dict = {
+                            "error_type": "TIMEOUT",
+                            "error_title": "Request Timed Out",
+                            "error_message": "AI service did not respond within the expected time.",
+                        }
+                        if attempt < MAX_RETRIES:
+                            continue
+                        return last_error_dict
+                    if err_code == 503 or "503" in err_msg or "unavailable" in err_msg:
+                        last_error_dict = {
+                            "error_type": "SERVICE_UNAVAILABLE",
+                            "error_title": "Service Unavailable",
+                            "error_message": "AI service is temporarily unavailable.",
+                        }
+                        if attempt < MAX_RETRIES:
+                            continue
+                        return last_error_dict
 
-            except APIError as api_err:
-                err_msg = str(api_err).lower()
-                err_code = getattr(api_err, "code", None)
+                    last_error_dict = {
+                        "error_type": "API_ERROR",
+                        "error_title": "AI Service Error",
+                        "error_message": "AI service returned an unexpected response.",
+                    }
+                    if attempt < MAX_RETRIES and err_code in [500, 502]:
+                        continue
+                    return last_error_dict
 
-                if err_code in [400, 401, 403] or any(
-                    k in err_msg for k in ["api_key_invalid", "api key not valid", "permission_denied"]
-                ):
-                    return {
-                        "error_type": "AUTH_ERROR",
-                        "error_title": "Authentication Error",
-                        "error_message": "AI service could not authenticate. Please verify your GEMINI_API_KEY.",
-                    }
-                if err_code == 404 or any(
-                    k in err_msg for k in ["not found", "is not supported", "unsupported model"]
-                ):
-                    return {
-                        "error_type": "UNSUPPORTED_MODEL",
-                        "error_title": "Model Unavailable",
-                        "error_message": f"The model '{self.model_name}' is currently unavailable.",
-                    }
-                if err_code == 429 or any(
-                    k in err_msg for k in ["resource_exhausted", "quota", "rate limit"]
-                ):
-                    return {
-                        "error_type": "RATE_LIMIT",
-                        "error_title": "Service Busy",
-                        "error_message": "AI service is currently experiencing high demand. Please try again shortly.",
-                    }
-                if err_code in [408, 504] or any(
-                    k in err_msg for k in ["deadline_exceeded", "deadline expired", "timed out"]
-                ):
+                except (httpx.TimeoutException, TimeoutError):
                     last_error_dict = {
                         "error_type": "TIMEOUT",
-                        "error_title": "Request Timed Out",
-                        "error_message": "AI service did not respond within the expected time.",
+                        "error_title": "Connection Timed Out",
+                        "error_message": "Network request to AI service timed out.",
                     }
                     if attempt < MAX_RETRIES:
                         continue
                     return last_error_dict
-                if err_code == 503 or "503" in err_msg or "unavailable" in err_msg:
+
+                except (httpx.ConnectError, httpx.NetworkError):
                     last_error_dict = {
-                        "error_type": "SERVICE_UNAVAILABLE",
-                        "error_title": "Service Unavailable",
-                        "error_message": "AI service is temporarily unavailable.",
+                        "error_type": "NETWORK_ERROR",
+                        "error_title": "Network Connection Error",
+                        "error_message": "Could not connect to AI service. Check internet connection.",
                     }
                     if attempt < MAX_RETRIES:
                         continue
                     return last_error_dict
 
-                last_error_dict = {
-                    "error_type": "API_ERROR",
-                    "error_title": "AI Service Error",
-                    "error_message": "AI service returned an unexpected response.",
-                }
-                if attempt < MAX_RETRIES and err_code in [500, 502]:
-                    continue
-                return last_error_dict
+                except Exception:
+                    last_error_dict = {
+                        "error_type": "UNEXPECTED_ERROR",
+                        "error_title": "Unexpected Error",
+                        "error_message": "An unexpected error occurred during AI analysis.",
+                    }
+                    break
 
-            except (httpx.TimeoutException, TimeoutError):
-                last_error_dict = {
-                    "error_type": "TIMEOUT",
-                    "error_title": "Connection Timed Out",
-                    "error_message": "Network request to AI service timed out.",
-                }
-                if attempt < MAX_RETRIES:
-                    continue
-                return last_error_dict
+            return last_error_dict or {
+                "error_type": "UNKNOWN_ERROR",
+                "error_title": "Analysis Incomplete",
+                "error_message": "Could not complete AI analysis.",
+            }
 
-            except (httpx.ConnectError, httpx.NetworkError):
-                last_error_dict = {
-                    "error_type": "NETWORK_ERROR",
-                    "error_title": "Network Connection Error",
-                    "error_message": "Could not connect to AI service. Check internet connection.",
-                }
-                if attempt < MAX_RETRIES:
-                    continue
-                return last_error_dict
-
-            except Exception:
-                last_error_dict = {
-                    "error_type": "UNEXPECTED_ERROR",
-                    "error_title": "Unexpected Error",
-                    "error_message": "An unexpected error occurred during AI analysis.",
-                }
-                break
-
-        return last_error_dict or {
-            "error_type": "UNKNOWN_ERROR",
-            "error_title": "Analysis Incomplete",
-            "error_message": "Could not complete AI analysis.",
-        }
+        finally:
+            client.close()

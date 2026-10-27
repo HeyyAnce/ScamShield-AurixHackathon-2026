@@ -3,7 +3,6 @@ Dataset loader and validator for the curated Scam Shield dataset.
 Strictly isolates train, validation, and test partitions to prevent data leakage.
 """
 
-import os
 from pathlib import Path
 from typing import Dict, List, Optional, Any, Tuple
 import pandas as pd
@@ -241,6 +240,9 @@ class DatasetLoader:
             validation_errors=errors,
             validation_warnings=warnings,
         )
+
+        if not report.is_valid:
+            return None, report
 
         curated_dataset = CuratedDataset(
             df_train=df_train,

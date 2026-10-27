@@ -50,7 +50,9 @@ def handle_request(request, detector, key):
     try:
         path = request.get('path')
         payload = request.get('payload')
-        if path == '/api/analyze':
+        if path == '/api/status':
+            response['body'] = {'ai_available': bool(key), 'dataset_available': detector.is_dataset_available}
+        elif path == '/api/analyze':
             if not isinstance(payload, dict):
                 raise ValueError('invalid_message')
             text, language = payload.get('text'), payload.get('language')
@@ -74,7 +76,9 @@ def handle_request(request, detector, key):
             response['body'] = {'text': extract_text(prepare_image(raw), key).text}
         else:
             raise ValueError('invalid_request')
-    except (ValueError, ImageInputError):
+    except ImageInputError as exc:
+        response.update(status=422, body={'detail': str(exc)})
+    except ValueError:
         response.update(status=422, body={'detail': 'invalid_input'})
     except Exception:
         response.update(status=503, body={'detail': 'analysis_unavailable'})

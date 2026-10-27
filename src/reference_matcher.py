@@ -7,7 +7,7 @@ and character n-gram similarity. Strictly restricted to the train partition.
 import re
 import math
 from collections import Counter
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Optional
 import pandas as pd
 from pydantic import BaseModel, Field
 
@@ -74,7 +74,7 @@ class DatasetReferenceMatcher:
         self.train_df = dataset.df_train.copy().reset_index(drop=True)
         self.num_docs = len(self.train_df)
 
-        # Build inverted index & document token frequencies
+        # Build document token frequencies and corpus statistics
         self.doc_token_counts: List[Counter] = []
         self.doc_lengths: List[int] = []
         self.doc_freq: Counter = Counter()
@@ -110,7 +110,6 @@ class DatasetReferenceMatcher:
 
         q_tokens = _tokenize(query_text)
         q_cnt = Counter(q_tokens)
-        q_len = len(q_tokens)
 
         if not q_tokens:
             return DatasetMatchResult()

@@ -107,6 +107,7 @@ window.ShieldI18n = (() => {
     'Here’s what we found':'जाँच में यह मिला', 'Verify the message independently.':'संदेश की स्वतंत्र रूप से पुष्टि करें।',
     'Warning signs':'खतरे के संकेत', 'Your next steps':'अब क्या करें', 'How we checked':'हमने कैसे जाँचा',
     'AI analysis':'AI विश्लेषण', 'AI unavailable':'AI उपलब्ध नहीं', 'Warning-sign rules':'खतरे के नियम',
+    'Reference examples could not be loaded. This result uses the remaining checks.':'संदर्भ उदाहरण लोड नहीं हुए। यह परिणाम बाकी उपलब्ध जाँचों पर आधारित है।',
     'Reference examples':'संदर्भ उदाहरण', 'Similar reference examples':'मिलते-जुलते संदर्भ उदाहरण',
     ' (Synthetic example)':' (बनाया गया उदाहरण)', 'A second opinion, not proof of who sent the message.':'यह दूसरी राय है, भेजने वाले की पहचान का प्रमाण नहीं।',
     'Clear and check another':'साफ़ करें और दूसरा संदेश जाँचें',

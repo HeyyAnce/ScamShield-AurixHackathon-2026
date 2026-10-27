@@ -14,7 +14,7 @@
     resolve(new Response(JSON.stringify(response.body), {status:response.status,headers:{'Content-Type':'application/json'}}));
   });
   window.fetch = async (input, options = {}) => {
-    if (typeof input !== 'string' || !['/api/analyze','/api/extract'].includes(input)) return nativeFetch(input, options);
+    if (typeof input !== 'string' || !['/api/analyze','/api/extract','/api/status'].includes(input)) return nativeFetch(input, options);
     const id = crypto.randomUUID();
     let payload;
     if (input === '/api/extract') {
@@ -24,7 +24,7 @@
         reader.onerror = reject;
         reader.readAsDataURL(options.body);
       });
-    } else payload = JSON.parse(options.body);
+    } else payload = input === '/api/status' ? null : JSON.parse(options.body);
     if (options.signal?.aborted) throw new DOMException('Aborted','AbortError');
     return new Promise((resolve,reject) => {
       const abort = () => { pending.delete(id); reject(new DOMException('Aborted','AbortError')); };

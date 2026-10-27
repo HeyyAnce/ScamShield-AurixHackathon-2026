@@ -12,12 +12,11 @@ from pathlib import Path
 from typing import Optional
 
 import streamlit as st
-from dotenv import load_dotenv
+from src.config import resolve_dataset_dir
 
 from src.pipeline import ScamShieldPipeline, PipelineOutput
 from src.image_reader import prepare_image, extract_text, ImageInputError
 
-load_dotenv(override=True)
 
 # Keep the original UI available as an explicit server-side rollback option.
 if os.getenv("SCAM_SHIELD_LEGACY_UI") != "1":
@@ -1018,7 +1017,9 @@ summary:focus-visible, [tabindex]:focus-visible,
 
 def get_pipeline() -> ScamShieldPipeline:
     # Adding or updating dataset files must replace a cached detector.
-    folder = Path(os.getenv("SCAM_SHIELD_DATASET_DIR") or Path(__file__).parent / "data" / "dataset")
+    folder = resolve_dataset_dir()
+    if folder is None:
+        return _cached_pipeline("", ())
     signature = tuple(
         (name, (folder / name).stat().st_mtime_ns, (folder / name).stat().st_size)
         for name in ("messages_english.csv", "messages_hinglish.csv", "sources.csv", "legit_domains.csv")
@@ -1029,7 +1030,7 @@ def get_pipeline() -> ScamShieldPipeline:
 
 @st.cache_resource(ttl=300, max_entries=2)
 def _cached_pipeline(folder: str, signature: tuple) -> ScamShieldPipeline:
-    return ScamShieldPipeline(dataset_dir=Path(folder))
+    return ScamShieldPipeline(dataset_dir=Path(folder) if folder else None)
 
 
 def get_gemini_api_key() -> Optional[str]:

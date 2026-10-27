@@ -156,8 +156,8 @@ No measured accuracy figure is claimed. Synthetic examples and reference matches
 
 ## Quick demo and verification
 
-1. Check an electricity-disconnection example and explain the warning signs.
-2. Check a genuine bank alert and explain why a Safe label is not sender verification.
+1. Try the KYC alert or Prize money example and explain the warning signs.
+2. Try Bank reminder and explain why a Safe label is not sender verification.
 3. Switch to Hindi and analyze another message.
 4. Extract text from a non-sensitive screenshot, review it and run analysis.
 5. Confirm the result shows whether AI and reference examples were used.
@@ -177,3 +177,35 @@ Before presenting, test the deployed URL on another device and save a 60–90 se
 ## AI tools disclosure
 
 Google Gemini powers runtime message analysis and screenshot text extraction. ChatGPT/Codex assisted with code generation, debugging, interface design, documentation and deployment guidance. The project uses a hosted model; the team did not train a custom fraud-detection model. Model configuration is recorded in `src/config.py`.
+
+## Configuration and audit notes
+
+Only the project-root `.env` is loaded. Existing environment variables take
+precedence; Streamlit Secrets take precedence for the public app's API key.
+The optional `SCAM_SHIELD_DATASET_DIR` selects an alternate message collection.
+Relative paths are resolved from the project root. Missing or incomplete folders
+fall back to `data/dataset`; malformed CSV contents are reported as unavailable.
+An alternate `legit_domains.csv` is used when present; otherwise rules retain the bundled official-domain list.
+Restart the server after changing data or configuration because detectors are cached.
+
+`SCAM_SHIELD_LEGACY_UI=1` intentionally selects the alternate built-in Streamlit
+interface. It is retained for compatibility; normal deployment uses the HTML frontend.
+Some rule-based overrides can still produce English explanations even with Hindi selected.
+The confidence label is heuristic, not a calibrated probability.
+
+Install development dependencies and run both test suites:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m pytest tests -q
+```
+
+See `CHANGELOG.md` for the cleanup summary and remaining limitations.
+
+To test, commit and push a release from the connected repository, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\release.ps1
+```
+
+This script stops on failed tests or a diverged remote and never force-pushes. Streamlit redeploys the connected main branch; verify the live site after the push.

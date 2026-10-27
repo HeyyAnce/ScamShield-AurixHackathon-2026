@@ -7,11 +7,9 @@ from pathlib import Path
 from typing import Optional
 from dotenv import load_dotenv
 
-# Ensure environment variables are loaded
-load_dotenv(override=True)
-
-# Project base directory
+# Project base directory; never discover a parent project's .env.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env", override=False)
 
 # Curated dataset folder (committed to the repo so local and live behave the same)
 DATASET_DIR = BASE_DIR / "data" / "dataset"
@@ -31,24 +29,22 @@ MAX_RETRIES = 0
 DEFAULT_TOP_K_MATCHES = 3
 MIN_SIMILARITY_THRESHOLD = 0.08
 
-# Where to look for the curated dataset
-DATASET_SEARCH_PATHS = [
-    # 1. Optional override, for example when testing another copy of the data
-    os.getenv("SCAM_SHIELD_DATASET_DIR"),
-    # 2. The dataset stored inside the project (used locally and on the live site)
-    str(DATASET_DIR),
-]
-
-
 def resolve_dataset_dir() -> Optional[Path]:
+    """Use a complete override folder, otherwise the bundled message files.
+
+    Relative overrides are project-relative. CSV contents are validated by
+    DatasetLoader; an existing but invalid dataset is reported as unavailable.
+    An optional official-domain file is used when present; otherwise rules
+    retain the bundled official-domain list.
     """
-    Resolves the dataset directory path from environment or standard locations.
-    Returns Path if valid directory containing messages_english.csv is found, otherwise None.
-    """
-    for candidate in DATASET_SEARCH_PATHS:
-        if not candidate:
-            continue
-        p = Path(candidate)
-        if p.exists() and p.is_dir() and (p / "messages_english.csv").exists():
-            return p
+    override = os.getenv("SCAM_SHIELD_DATASET_DIR", "").strip()
+    candidates = [Path(override).expanduser()] if override else []
+    candidates.append(DATASET_DIR)
+    for candidate in candidates:
+        folder = candidate if candidate.is_absolute() else BASE_DIR / candidate
+        if folder.is_dir() and all(
+            (folder / name).is_file()
+            for name in ("messages_english.csv", "messages_hinglish.csv")
+        ):
+            return folder.resolve()
     return None

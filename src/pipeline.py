@@ -4,11 +4,11 @@ Orchestrates:
 User message -> Rule Engine -> Dataset Reference Matching -> Gemini Analysis -> Decision Reconciliation
 """
 
-from typing import Dict, List, Any, Optional
+from typing import List, Any, Optional
 from pathlib import Path
 from pydantic import BaseModel, Field
 
-from src.config import resolve_dataset_dir
+from src.config import resolve_dataset_dir, DEFAULT_TOP_K_MATCHES, MIN_SIMILARITY_THRESHOLD
 from src.dataset_loader import DatasetLoader, CuratedDataset, DatasetValidationReport
 from src.reference_matcher import DatasetReferenceMatcher, DatasetMatchResult
 from src.rule_engine import RuleEngine, RuleAnalysisResult
@@ -60,10 +60,11 @@ class ScamShieldPipeline:
             loader = DatasetLoader(self.dataset_dir)
             self.dataset, self.dataset_report = loader.load()
             if self.dataset and self.dataset_report and self.dataset_report.is_valid:
-                self.matcher = DatasetReferenceMatcher(self.dataset)
+                self.matcher = DatasetReferenceMatcher(self.dataset, min_similarity=MIN_SIMILARITY_THRESHOLD)
 
         # Initialize core detection engines
-        self.rule_engine = RuleEngine()
+        domains_path = Path(self.dataset_dir) / "legit_domains.csv" if self.dataset_dir else None
+        self.rule_engine = RuleEngine(domains_path=domains_path)
         self.gemini_analyzer = GeminiAnalyzer()
         self.decision_engine = DecisionEngine()
 
@@ -100,7 +101,7 @@ class ScamShieldPipeline:
         is_dataset_informed = False
 
         if self.matcher:
-            dataset_matches = self.matcher.find_similar(cleaned, top_k=3)
+            dataset_matches = self.matcher.find_similar(cleaned, top_k=DEFAULT_TOP_K_MATCHES)
             matched_refs = dataset_matches.matched_references
             if matched_refs:
                 is_dataset_informed = True
