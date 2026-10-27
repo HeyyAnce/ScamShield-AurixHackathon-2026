@@ -1,126 +1,179 @@
-# Scam Shield
+# ScamShield | AURIX 2026
 
-Scam Shield checks a suspicious SMS, WhatsApp or email message and tells you if it looks like a scam. It explains why in plain language and says what to do next. It is built for people in India, especially parents, grandparents and first-time smartphone users.
+**Check a suspicious message before you act.**
 
-Live app: https://scamshield-aurixhackathon-2026.streamlit.app/
+ScamShield helps people in India examine SMS, WhatsApp and email text for scam warning signs. It combines rules, reference examples and Google Gemini to explain a result and suggest next steps in plain language.
 
-## What it does
+[Open the live app](https://scamshield-aurixhackathon-2026.streamlit.app/) · [GitHub repository](https://github.com/HeyyAnce/ScamShield-AurixHackathon-2026)
 
-You paste the text of a message. You get one of three results:
+## What you can do
 
-| Result | Meaning |
-| :--- | :--- |
-| **Likely scam** | Strong scam signs were found. |
-| **Needs verification** | Some signs are worrying, or it is unclear. Check another way before acting. |
-| **No clear scam signs found** | Nothing alarming was found. This does not prove the sender is genuine. |
+- Paste a message in English, Hindi or Hinglish.
+- See a verdict, reasons, suggested actions and which checks were used.
+- Switch between English and Hindi, and light and dark themes.
+- Try example messages before checking your own.
+- Upload a screenshot, review the extracted text and then analyze it.
+- Explore Home, Safety Guide, Help and About/Privacy pages.
 
-Along with the result you see the warning signs, numbered steps to take, and how the message was checked.
+| Result | How to interpret it |
+| --- | --- |
+| **Scam** | Strong scam indicators were found. |
+| **Likely scam** | The message looks suspicious and needs independent verification. |
+| **Safe** | No clear scam signs were found; this does **not** prove the sender is genuine. |
 
-- The page can be switched between English and Hindi, and between light and dark mode.
-- You can paste messages in English, Hinglish or Hindi.
-- It reads the text only. It cannot tell who really sent a message, and it does not stop payments.
+ScamShield is a second opinion. It does not authenticate senders, block payments or guarantee protection.
 
-### Read a screenshot (beta)
+## How it works
 
-Open **Upload a screenshot**, choose a PNG, JPG/JPEG or WebP image, and click **Extract text**. The image is sent to Google Gemini only when you click that button. Review and correct the text in the message box, then click **Check message** to run the normal checks.
+```text
+Message text / reviewed screenshot text
+                  |
+           Python pipeline
+                  |
+      +-----------+------------+
+      |           |            |
+ Warning rules  Reference   Gemini analysis
+                matching   (when available)
+      |           |            |
+      +-----------+------------+
+                  |
+           Decision engine
+                  |
+     Verdict + reasons + next steps
+```
 
-Uploads are limited to 5 MB and 16 megapixels. Remove private details before uploading. Damaged, unreadable or empty images show an error, never a safe verdict. Without the AI service, paste or type the message instead. Extraction can miss or misread words; there is no claimed language accuracy.
+1. **Rules** detect patterns such as threats, urgency, OTP/PIN requests, suspicious links, APK downloads and payment tricks.
+2. **Reference matching** retrieves similar messages using lexical similarity. It does not train a model.
+3. **Gemini** analyzes the message when a valid server-side API key and service access are available.
+4. **The decision engine** reconciles the signals into a result.
 
-## How a message is checked
+If Gemini is unavailable, text analysis falls back to rules and reference examples. The interface indicates when AI was not used. Screenshot extraction requires Gemini and is a separate step before message analysis.
 
-1. **Rules** look for known scam signs: urgency and threats, requests for OTP or PIN, suspicious links and APK files, advance-fee and UPI tricks, and links that copy a real bank's name.
-2. **Reference examples** from `data/dataset` are compared with the message.
-3. **Google Gemini** reads the full message when an API key is set up.
-4. **A decision step** combines all of the above into one result.
+## Technology
 
-If there is no API key, or Gemini is not available, the app still works with the rules and reference examples. The result says that the AI check was not used.
+| Layer | Technology |
+| --- | --- |
+| Interface | HTML, CSS, JavaScript; English/Hindi translations |
+| Analysis | Python rules, reference retrieval and decision logic |
+| AI | Google Gen AI SDK; configured model: `gemini-3.5-flash-lite` |
+| Local web server | FastAPI and Uvicorn |
+| Public deployment | Streamlit Community Cloud with a custom frontend component |
+| Reference data | CSV files included in the repository |
+| Image processing | Pillow validation and Gemini text extraction |
 
-## The data
+The public app starts from `app.py` and serves the frontend through `cloud_ui.py`. Local FastAPI mode starts from `web_server.py`. Both use the shared Python analysis pipeline.
 
-The `data/dataset` folder holds the English and Hinglish example messages, a list of official bank and government websites, and the sources. Open any `.csv` file in Excel. See `data/dataset/README.txt` for details.
+## Run locally on Windows
 
-- Most example messages are synthetic: written for testing, with made-up names, numbers and links. The rest are real messages from public collections.
-- The messages are used to find similar examples. They are not used to train a model.
-- No accuracy figure is claimed for this data.
-- In `legit_domains.csv`, only domains marked `checked` are used by the app.
+Install Git and Python. The team's working environment uses Python 3.14. Commands below run directly through the virtual environment, so PowerShell script activation is unnecessary.
 
-Credits for the public messages and their licences are in `data/dataset/sources.csv`. They come from the UCI SMS Spam Collection (CC BY 4.0), the Hugging Face dataset `anmolshrivastav/scam-ham-india` (Apache-2.0) and the SmishX project (MIT).
-
-## Run it on your computer
-
-You need Python 3.10 or newer. These steps are for Windows PowerShell.
+### 1. Get the project and install dependencies
 
 ```powershell
 git clone https://github.com/HeyyAnce/ScamShield-AurixHackathon-2026.git
-cd ScamShield-AurixHackathon-2026
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
+Set-Location ScamShield-AurixHackathon-2026
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --index-url https://pypi.org/simple --timeout 120 -r web_requirements.txt
 ```
 
-The app opens at http://localhost:8501.
+### 2. Configure optional AI access
 
-The Gemini key is optional. To use it, copy `.env.example` to `.env` and set `GEMINI_API_KEY`. Never commit the `.env` file.
+Create a `.env` file in the project root containing:
 
-## Put it online (Streamlit Community Cloud)
+```dotenv
+GEMINI_API_KEY="your_actual_key_here"
+```
 
-Add the key in the app's settings under **Secrets**:
+Use your own key and keep it private. `.env` and `.venv` must remain excluded from Git. No dataset path override is needed: the project loads `data/dataset` by default. Restart the server after changing environment settings.
+
+### 3. Start the web app
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn web_server:app --host 127.0.0.1 --port 8766
+```
+
+Open **http://127.0.0.1:8766**. Keep the terminal open; press **Ctrl+C** to stop.
+
+### Alternatively: test the Streamlit deployment mode
+
+```powershell
+.\.venv\Scripts\python.exe -m streamlit run app.py --server.port 8501
+```
+
+Open **http://localhost:8501**.
+
+## Deploy with Streamlit Community Cloud
+
+Select repository `HeyyAnce/ScamShield-AurixHackathon-2026`, branch `main`, and entry point `app.py`. Add the key under the app's Secrets settings:
 
 ```toml
-GEMINI_API_KEY = "your_key_here"
+GEMINI_API_KEY = "your_actual_key_here"
 ```
 
-Visitors do not need a key of their own.
+Visitors do not need their own API keys. The key stays on the server. Dependencies are installed from `requirements.txt`; the FastAPI server is only needed for standalone web mode.
 
-## Project files
+## Project structure
 
-| Path | What it does |
-| :--- | :--- |
-| `app.py` | The page: input, results, language and theme switches. |
-| `src/pipeline.py` | Runs the steps in order. |
-| `src/rule_engine.py` | The rules, and the check for official links. |
-| `src/dataset_loader.py` | Loads and validates the dataset. |
-| `src/reference_matcher.py` | Finds similar example messages. |
-| `src/gemini_client.py` | Talks to Gemini. |
-| `src/decision_engine.py` | Combines everything into one result. |
-| `src/config.py` | Settings and file paths. |
-| `src/image_reader.py` | Validates screenshots and extracts text for review. |
-| `data/dataset/` | The example messages, official websites and sources. |
-| `.streamlit/config.toml` | Page theme. |
-| `.env.example` | Template for the local `.env` file. |
+```text
+frontend/                 HTML, styles, scripts and translations
+app.py                    Streamlit entry point
+cloud_ui.py               Frontend-to-Python bridge for Streamlit
+web_server.py             FastAPI server and API routes
+src/
+  config.py               Model, timeouts and dataset settings
+  pipeline.py             Analysis orchestration
+  rule_engine.py          Warning-sign rules
+  dataset_loader.py       CSV loading and validation
+  reference_matcher.py    Similar-message retrieval
+  gemini_client.py        Gemini message analysis
+  decision_engine.py      Signal reconciliation
+  image_reader.py         Image validation and text extraction
+data/dataset/             Reference messages, domains and source records
+requirements.txt          Streamlit and analysis dependencies
+web_requirements.txt      Additional standalone web dependencies
+```
 
-## Privacy
+Local API routes: `GET /api/status`, `POST /api/analyze`, `POST /api/extract`. The status endpoint reports key configuration and dataset availability; a successful **AI analysis** result is needed to confirm an actual AI request worked.
 
-When the AI check is on, the text of your message is sent to Google Gemini. Screenshot extraction also sends the selected image to Gemini. Images are processed in memory; this app does not save uploads to disk. Do not paste or upload passwords, PINs, OTPs or card numbers.
+## Reference data and attribution
 
-## Short hackathon demo
+The collection contains **948 messages**: 582 English and 366 Hinglish. Of these, 722 are synthetic and 226 come from public collections. Only the **662 training-split messages** are searched as references; the split name does not mean this app trains a model.
 
-1. Choose **Electricity cut-off**, then **Check message**. Explain the warning signs and the three checks shown under the result.
-2. Choose **Real bank alert**. Explain that no clear scam signs does not prove who sent it.
-3. Enter an unclear message to show **Needs verification**. Results can vary when AI is used.
-4. Upload a clear screenshot, extract the text, correct it if needed, and run the check.
-5. Switch to Hindi and dark mode. Explain that offline explanations may remain in English.
+Source and licence records are maintained in `data/dataset/sources.csv`, with collection notes in `data/dataset/README.txt`. Public sources include the UCI SMS Spam Collection, `anmolshrivastav/scam-ham-india` and SmishX. Preserve their attribution when using or distributing the data.
 
-The 948 dataset messages are reference examples, mostly synthetic. Only the 662 train messages are searched. This is a hackathon prototype, not a trained fraud model, sender verification service, or guarantee of protection.
+No measured accuracy figure is claimed. Synthetic examples and reference matches are not proof that an unseen message is fraudulent or legitimate.
 
-If the live app is missing reference examples, confirm that `data/dataset` is deployed and that any `SCAM_SHIELD_DATASET_DIR` override points to real files. The detector cache follows dataset changes and expires after five minutes. Failed dataset loading is shown with a warning after analysis. After a deployment, reload the page; if an old process persists, reboot the app from Streamlit Community Cloud.
+## Privacy and limitations
 
-## If you have been scammed
+- With AI enabled, submitted message text is sent to Google Gemini. Screenshot extraction sends the selected image to Gemini.
+- Images are processed in memory rather than intentionally saved as uploaded files. The Streamlit session retains the latest request/result for interaction.
+- Do not submit passwords, PINs, OTPs, card numbers or unnecessary personal information.
+- Screenshots are limited to 5 MB and 16 megapixels. Review extracted text because OCR can make mistakes.
+- Offline explanations and reference messages may remain in their original language.
+- Feedback currently downloads a draft; it is **not delivered to an inbox**.
+- Results can vary, and false positives and false negatives are possible.
+- This prototype is not an official bank, police or government service.
 
-- National Cybercrime Helpline: call **1930** straight away.
-- Report online: https://cybercrime.gov.in
-- Report a fraud call or message (Chakshu): https://sancharsaathi.gov.in
-- Help with a complaint about your bank: RBI contact centre, toll-free **14448**.
+## Quick demo and verification
 
-Scam Shield is a project made for a hackathon. It is not connected to any bank, police body or government department, and none of them has checked or approved its results.
+1. Check an electricity-disconnection example and explain the warning signs.
+2. Check a genuine bank alert and explain why a Safe label is not sender verification.
+3. Switch to Hindi and analyze another message.
+4. Extract text from a non-sensitive screenshot, review it and run analysis.
+5. Confirm the result shows whether AI and reference examples were used.
 
-## Turquoise web frontend
+Before presenting, test the deployed URL on another device and save a 60–90 second demo video locally as an internet-outage backup.
 
-The HTML/CSS/JavaScript frontend is in `frontend/`; `web_server.py` provides the Python API. The Streamlit entrypoint `app.py` serves the same frontend through `cloud_ui.py` on the existing public URL.
+## Team Ideaforge
 
-Install `web_requirements.txt`, set `GEMINI_API_KEY` in your environment or local `.env`, then run `python -m uvicorn web_server:app --host 127.0.0.1 --port 8765`. Open http://127.0.0.1:8765. Keep `.env` out of Git.
+**IILM University, Greater Noida · AURIX 2026**
 
-Includes Home, Safety Guide, Help, About/Privacy, light/dark turquoise themes, message analysis and reviewed screenshot extraction. Result labels map SCAM to Scam, SUSPICIOUS to Likely scam, and SAFE to Safe; no result verifies the sender or guarantees safety.
+- Aditya Raj Dixit
+- Rudraksh Singh
+- Somya Singh
+- Himanshi Bisht
+- Piyush Raj
 
-English/Hindi switching is available across the web interface and requests AI explanations in the selected language. Offline explanations and reference messages may remain in their original language. Current limit: feedback downloads a draft and does not send to an inbox. The public Streamlit deployment uses `cloud_ui.py` and the existing server-side Gemini secret; no API key is exposed to the browser. Feedback delivery is not connected. Set the server environment variable `SCAM_SHIELD_LEGACY_UI=1` only for an intentional rollback to the original UI. The FastAPI entrypoint remains available for standalone local use.
+## AI tools disclosure
+
+Google Gemini powers runtime message analysis and screenshot text extraction. ChatGPT/Codex assisted with code generation, debugging, interface design, documentation and deployment guidance. The project uses a hosted model; the team did not train a custom fraud-detection model. Model configuration is recorded in `src/config.py`.
