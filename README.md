@@ -2,7 +2,7 @@
 
 Scam Shield checks a suspicious SMS, WhatsApp or email message and tells you if it looks like a scam. It explains why in plain language and says what to do next. It is built for people in India, especially parents, grandparents and first-time smartphone users.
 
-Live app: https://ideaforge-scam-shield.streamlit.app/
+Live app: https://scamshield-aurixhackathon-2026.streamlit.app/
 
 ## What it does
 
@@ -51,8 +51,8 @@ Credits for the public messages and their licences are in `data/dataset/sources.
 You need Python 3.10 or newer. These steps are for Windows PowerShell.
 
 ```powershell
-git clone https://github.com/HeyyAnce/scam-shield.git
-cd scam-shield
+git clone https://github.com/HeyyAnce/ScamShield-AurixHackathon-2026.git
+cd ScamShield-AurixHackathon-2026
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
