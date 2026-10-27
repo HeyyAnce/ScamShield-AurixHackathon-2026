@@ -137,7 +137,9 @@ Local API routes: `GET /api/status`, `POST /api/analyze`, `POST /api/extract`. T
 
 ## Reference data and attribution
 
-The collection contains **948 messages**: 582 English and 366 Hinglish. Of these, 722 are synthetic and 226 come from public collections. Only the **662 training-split messages** are searched as references; the split name does not mean this app trains a model.
+The active collection contains **1948 messages**: 982 English, 766 Hinglish and 200 Hindi. 1722 are synthetic and 226 are marked public-origin. Only the **1662 training-split messages** are searched; this app does not train Gemini. The original 141 validation and 145 test records are unchanged. Added synthetic examples are reference material, not independent evidence of accuracy.
+
+An additional public spam/ham collection is stored in `data/review/` for label review. It is excluded from retrieval: spam is not equivalent to scam, and ham does not prove safety. See `data/review/README.md` for provenance and licensing.
 
 Source and licence records are maintained in `data/dataset/sources.csv`, with collection notes in `data/dataset/README.txt`. Public sources include the UCI SMS Spam Collection, `anmolshrivastav/scam-ham-india` and SmishX. Preserve their attribution when using or distributing the data.
 

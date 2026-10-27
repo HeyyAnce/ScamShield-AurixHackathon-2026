@@ -21,7 +21,7 @@ REQUIRED_COLUMNS = [
 
 VALID_LABELS = {"SCAM", "SAFE", "SUSPICIOUS"}
 VALID_SPLITS = {"train", "val", "test"}
-VALID_LANGUAGES = {"en", "hinglish"}
+VALID_LANGUAGES = {"en", "hinglish", "hi"}
 VALID_ORIGINS = {"public", "synthetic"}
 
 # Message files in the dataset folder, and the columns they must contain.
@@ -130,7 +130,7 @@ class DatasetLoader:
         warnings: List[str] = []
 
         frames = []
-        for name in MESSAGE_FILES:
+        for name in MESSAGE_FILES + (("messages_hindi.csv",) if (folder / "messages_hindi.csv").exists() else ()):
             path = folder / name
             if not path.exists():
                 errors.append(f"Required dataset file missing: {path}")

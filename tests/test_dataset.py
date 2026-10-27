@@ -19,14 +19,14 @@ def test_dataset_discovery_and_loader():
     loader = DatasetLoader(dataset_dir)
     dataset, report = loader.load()
     assert report.is_valid is True
-    assert report.total_records == 948
-    assert report.train_records == 662
+    assert report.total_records == 1948
+    assert report.train_records == 1662
     assert report.val_records == 141
     assert report.test_records == 145
     assert len(report.validation_errors) == 0
 
     assert dataset is not None
-    assert dataset.train_count == 662
+    assert dataset.train_count == 1662
     assert dataset.val_count == 141
     assert dataset.test_count == 145
 
@@ -50,8 +50,8 @@ def test_csv_schemas_and_integrity():
     with open(data_dir / "messages_hinglish.csv", "r", encoding="utf-8-sig") as f:
         hg_rows = list(csv.DictReader(f))
 
-    assert len(en_rows) == 582
-    assert len(hg_rows) == 366
+    assert len(en_rows) == 982
+    assert len(hg_rows) == 766
 
     all_rows = en_rows + hg_rows
     ids = [r["message_id"] for r in all_rows]

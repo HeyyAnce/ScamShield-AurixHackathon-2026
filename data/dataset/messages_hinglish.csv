@@ -1,4 +1,4 @@
-﻿message_id,message,label,category,risk_signals,has_link,language,origin,source_id,split
+message_id,message,label,category,risk_signals,has_link,language,origin,source_id,split
 HG-0001,"Axis Bank Warning: Aapke bank account me PAN card link nahi hone se Rs 5,000 ka fine lagne wala hai. Fine se bachne aur khata active rakhne ke liye turant http://axis-pan-bachao.example par apni netbanking details bharo.",SCAM,banking_kyc_account_block,kyc_suspension_threat; penalty_scare; netbanking_credential_theft,yes,hinglish,synthetic,SYN_A_HINGLISH,train
 HG-0002,Canara Bank Notice : Aapke Jan-Dhan / Savings khate ki salana KYC verify nahi hui hai !! Aaj shaam tak https://canara-kyc-online.example par Aadhaar OTP submit karein warna sarkari paisa ruk jayega ...,SCAM,banking_kyc_account_block,kyc_suspension_threat; unnatural_spacing; otp_harvesting,yes,hinglish,synthetic,SYN_A_HINGLISH,test
 HG-0003,"Case SS-0014: card team ne review ke baad account par hold bataya hai. Please https://example.invalid/bank_kyc/ss-0014 par card details confirm karein midnight se pehle, warna transfers block ho jayenge.",SCAM,banking_kyc_account_block,credential_request; account_threat; urgency,yes,hinglish,synthetic,SYN_B_HINGLISH,test
@@ -365,3 +365,403 @@ HG-0363,bill settle karne ke baad apna share transfer kar dunga. Routine update 
 HG-0364,campus bus ten minutes late niklegi. Routine update process karne ke liye service team aapse OTP nahi maangegi.,SAFE,personal_conversation,,no,hinglish,synthetic,SYN_B_HINGLISH,test
 HG-0365,"exam timetable official student portal par available hai. Agar pehchaan mein nahi aa raha, reply karne ke bajaye official app se support contact karein.",SAFE,personal_conversation,,no,hinglish,synthetic,SYN_B_HINGLISH,train
 HG-0366,"main ten minutes late hoon, tum start kar lena. Is notice ka reply dena zaroori nahi hai.",SAFE,personal_conversation,,no,hinglish,synthetic,SYN_B_HINGLISH,val
+SYN26-GEN0001,Delivery fail: address adhura hai. http://track-parcel-pay21.example/login par address update karein aur Rs 49 pay karein.,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0002,Aapke account ki details 5 Nov ko update ho gayi hain. Koi action zaroori nahi.,SAFE,additional_kyc_confirmation,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0004,"Reward points expire hone wale hain. Rs 15,490 cashback aaj raat 9:30 baje claim karein: http://cashback-claim-now48.example/login",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0008,"Part-time job offer! Salary Rs 30,000 mahina. Joining confirm karne ke liye Rs 49,999 deposit bhejein. WhatsApp: 98XXXXXX94",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0009,Aapka parcel warehouse mein ruka hai. Rs 99 redelivery fees aaj pay karein: http://address-update-courier63.example/verify,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0012,"UPI: Rs 9,999 merchant ko A/c XX3456 se 26 Oct ko pay hue. Balance Rs 2,145.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0013,"Aapka Rs 1,500 ka refund ready hai. UPI request approve karein aur paise le lein. 24 ghante mein tak valid.",SCAM,additional_upi_refund,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0017,Tax refund Rs 499 approve hua. aaj shaam 6 baje tak account number aur OTP confirm karein: http://it-refund-portal17.example/update,SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0024,"Aapka order #A719453 ship ho gaya hai, 30 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0027,"Part-time job offer! Salary Rs 30,000 mahina. Joining confirm karne ke liye Rs 9,999 deposit bhejein. WhatsApp: 98XXXXXX50",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0028,"Aapki gaadi par Rs 4,999 ka e-challan pending hai. aaj shaam 6 baje tak pay karein warna court notice: http://echallan-pay-now40.example/pay",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0029,"Aapke account XX9012 mein 30 Oct ko Rs 999 credit hue. Balance Rs 7,310.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0031,Reminder: Dr. Sunita ke saath aapka appointment 2 Nov ko 10:00 AM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0032,Aapka parcel 4:15 PM baje reception par pahunch gaya.,SAFE,additional_delivery_done,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0033,"Aap Rs 10,00,000 ke inaam ke liye select hue hain. Rs 999 fees raat 12 baje se pehle bhejein. Call: 98XXXXXX44",SCAM,additional_lottery_prize,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0034,"Salary Rs 25,000 account XX9012 mein aa gayi. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0039,Aapka parcel 11:30 AM baje reception par pahunch gaya.,SAFE,additional_delivery_done,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0043,Telecom notice: SIM verification fail. http://sim-verify-fast28.example/pay par Aadhaar aur OTP bhejein warna number band.,SCAM,additional_sim_block,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0044,"Hello, galti se Rs 4,999 aapko transfer ho gaye. Reverse karne ke liye jo OTP aaya woh bata dijiye.",SCAM,additional_otp_by_mistake,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0047,Reminder: Dr. Amit ke saath aapka appointment 5 Nov ko 4:15 PM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0051,Fraud alert: hum call ya SMS par OTP ya card details kabhi nahi maangte. Shaky message 1930 par report karein.,SAFE,additional_safety_awareness,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0057,Aapka parcel warehouse mein ruka hai. Rs 49 redelivery fees aaj pay karein: http://address-update-courier8.example/update,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0059,"Hamare VIP stock tips group se judein. 10 din mein 30% guaranteed return. Seats limited, aaj Rs 1,500 jama karein.",SCAM,additional_investment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0067,"UPI: Rs 999 merchant ko A/c XX1234 se 25 Oct ko pay hue. Balance Rs 7,310.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0068,Reminder: Dr. Meena ke saath aapka appointment 30 Oct ko 11:30 AM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0070,"Reminder: broadband bill Rs 2,999 30 Oct ko due hai. Auto-pay on hai.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0072,"Priya upbhokta, pichle mahine ka bill update nahi hua. Bijli aaj band hogi. Officer se baat karein: 98XXXXXX55",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0075,Aapki cab 3 minute mein pahunch rahi hai. Driver: Farhan.,SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0077,Apna order track karein: https://shop-track.example/orders/210165,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0079,"Aapki insurance policy aaj lapse ho jayegi. Premium Rs 1,500 yahan pay karein: http://policy-bonus-claim84.example/claim",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0081,"Bijli bill Rs 25,000 ka due date 30 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0083,Aapka KYC expire ho gaya hai. http://kyc-update-secure35.example/pay par details aur OTP bhejein warna account band.,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0087,"Aapke account XX1234 mein 25 Oct ko Rs 49,999 credit hue. Balance Rs 2,145.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0095,"UPI: Rs 999 merchant ko A/c XX9012 se 5 Nov ko pay hue. Balance Rs 18,420.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0098,"Salary Rs 49,999 account XX1234 mein aa gayi. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0101,"Rs 49,999 aapke account XX3456 se 30 Oct ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0102,"Salary Rs 999 account XX3456 mein aa gayi. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0105,"Traffic fine Rs 4,999. Abhi http://echallan-pay-now3.example/update par pay karein warna licence suspend.",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0106,"Bina document ke Rs 50,000 tak instant loan approve! App install karein, processing fees Rs 999: http://easy-loan-now61.example/update",SCAM,additional_loan_app,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0107,"Refund pending: Rs 2,999. Paise lene ke liye http://refund-upi-claim35.example/pay par UPI PIN daalein.",SCAM,additional_upi_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0111,"Aapka credit card statement ready hai. Minimum due Rs 499, due date 2 Nov.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0112,Apna order track karein: https://shop-track.example/orders/601342,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0114,Telecom notice: SIM verification fail. http://sim-verify-fast75.example/pay par Aadhaar aur OTP bhejein warna number band.,SCAM,additional_sim_block,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0115,Aapka OTP 552137 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0117,"UPI: Rs 2,999 merchant ko A/c XX1234 se 2 Nov ko pay hue. Balance Rs 52,880.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0120,Aapki class 2 Nov ko 10:00 AM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0122,Aapka OTP 973760 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0123,"Aapka credit card statement ready hai. Minimum due Rs 15,490, due date 2 Nov.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0129,"Refund pending: Rs 25,000. Paise lene ke liye http://refund-upi-claim9.example/verify par UPI PIN daalein.",SCAM,additional_upi_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0130,Aapka order 10:00 AM baje deliver ho gaya. App mein rating dein.,SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0134,Aapki e-receipt yahan hai: https://receipts.example/r/130723. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0138,Aapke account ki details 2 Nov ko update ho gayi hain. Koi action zaroori nahi.,SAFE,additional_kyc_confirmation,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0141,Dhyan dein: KYC update nahi hai. Account freeze ho jayega. Yahan verify karein: http://kyc-update-secure33.example/login,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0143,"Aapki insurance policy 2 ghante mein lapse ho jayegi. Premium Rs 49,999 yahan pay karein: http://policy-renew-today48.example/claim",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0146,Aapki cab 3 minute mein pahunch rahi hai. Driver: Amit.,SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0148,"Unauthorised transaction Rs 1,500 mila. Rokne ke liye abhi verify karein: http://stop-debit-secure64.example/verify",SCAM,additional_fake_debit_alert,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0150,"Salary Rs 49,999 account XX5678 mein aa gayi. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0152,Reward points expire hone wale hain. Rs 999 cashback raat 12 baje se pehle claim karein: http://cashback-claim-now55.example/update,SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0154,Reward points expire hone wale hain. Rs 999 cashback 2 ghante mein claim karein: http://cashback-claim-now29.example/login,SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0156,"Bina document ke Rs 50,000 tak instant loan approve! App install karein, processing fees Rs 9,999: http://loan-instant-apply24.example/claim",SCAM,additional_loan_app,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0158,Rs 499 ke payment ke liye OTP 325753 use karein. Ye code kisi ko na batayein.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0163,"Rs 1,500 ke payment ke liye OTP 219769 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0164,"Aapka FASTag low balance ki wajah se block hai. Abhi Rs 49,999 recharge karein: http://fastag-kyc-update17.example/update",SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0168,"Rs 2,999 ke payment ke liye OTP 139139 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0170,"Aapke account XX5678 mein 2 Nov ko Rs 499 credit hue. Balance Rs 2,145.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0172,Reminder: broadband bill Rs 499 5 Nov ko due hai. Auto-pay on hai.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0173,Aapki cab 3 minute mein pahunch rahi hai. Driver: Ramesh.,SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0176,"UPI: Rs 49,999 merchant ko A/c XX3456 se 25 Oct ko pay hue. Balance Rs 2,145.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0182,Aapka OTP 759661 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0183,"Rs 49,999 aapke account XX9012 se 5 Nov ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0188,"Aapka bank account 24 ghante mein band ho jayega, KYC pending hai. Abhi update karein: http://bank-verify-now81.example/login",SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0189,"Aapka Rs 1,500 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0190,Aapka OTP 961886 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0192,"Aapke account se Rs 9,999 kat gaye. Cancel karne ke liye 98XXXXXX13 par call karein aur OTP bataein.",SCAM,additional_fake_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0193,"Bijli bill Rs 9,999 ka due date 25 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0198,"Cyber Crime Branch se bol rahe hain. Aapke naam ke parcel mein illegal saaman hai. Aap digital arrest mein hain. Video call par rahein, kisi ko na batayein.",SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0206,Aapka KYC expire ho gaya hai. http://kyc-update-secure23.example/login par details aur OTP bhejein warna account band.,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0208,Refund pending: Rs 999. Paise lene ke liye http://upi-refund-center32.example/update par UPI PIN daalein.,SCAM,additional_upi_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0214,Aapka parcel 6:45 PM baje reception par pahunch gaya.,SAFE,additional_delivery_done,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0217,FASTag KYC pending hai. aaj update karein warna tag band: http://fastag-kyc-update90.example/update,SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0222,Happy birthday bhai Meena! Party kab hai?,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0227,CBI notice: aapka Aadhaar money laundering se juda hai. Abhi video call join karein warna warrant raat 12 baje se pehle jaari hoga.,SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0229,Income Tax Dept: Aap Rs 499 refund ke yogya hain. Bank details yahan bhejein: http://it-refund-portal90.example/login,SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0231,Reminder: Dr. Sunita ke saath aapka appointment 26 Oct ko 11:30 AM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0235,Aapka PAN Aadhaar se link nahi hai. Account 24 ghante mein freeze hoga. Update karein: http://aadhaar-verify-now61.example/claim,SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0236,Kya aaj 11:30 AM par milna hai? Project ke baare mein baat karni hai.,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0237,"Bina document ke Rs 50,000 tak instant loan approve! App install karein, processing fees Rs 9,999: http://easy-loan-now55.example/login",SCAM,additional_loan_app,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0239,"Crypto double scheme: Rs 15,490 lagayein, 7 din mein double. Bilkul safe. Join: http://crypto-double-join51.example/update",SCAM,additional_investment,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0240,"Aapke account se Rs 49,999 kat gaye. Cancel karne ke liye 98XXXXXX14 par call karein aur OTP bataein.",SCAM,additional_fake_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0243,Aapka KYC expire ho gaya hai. http://bank-verify-now19.example/claim par details aur OTP bhejein warna account band.,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0245,"Pre-approved loan! Pehle Rs 4,999 insurance fees bhejein. Offer 2 ghante mein khatam.",SCAM,additional_loan_app,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0247,Apna order track karein: https://shop-track.example/orders/911791,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0249,"Aapka credit card statement ready hai. Minimum due Rs 2,999, due date 30 Oct.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0252,Reminder: broadband bill Rs 999 2 Nov ko due hai. Auto-pay on hai.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0257,"Aapka bank account 2 ghante mein band ho jayega, KYC pending hai. Abhi update karein: http://bank-verify-now74.example/claim",SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0264,"Crypto double scheme: Rs 1,500 lagayein, 7 din mein double. Bilkul safe. Join: http://crypto-double-join67.example/pay",SCAM,additional_investment,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0265,"Priya upbhokta, pichle mahine ka bill update nahi hua. Bijli aaj shaam 6 baje tak band hogi. Officer se baat karein: 98XXXXXX93",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0266,"Salary Rs 4,999 account XX3456 mein aa gayi. Balance Rs 7,310.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0268,"Aadhaar verification pending. Penalty Rs 15,490 se bachne ke liye http://pan-link-update12.example/update par OTP daalein.",SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0269,"Aapki train PNR 12681311 confirm hai. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0270,"Aapka Rs 9,999 ka refund ready hai. UPI request approve karein aur paise le lein. 24 ghante mein tak valid.",SCAM,additional_upi_refund,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0272,Reminder: Dr. Farhan ke saath aapka appointment 2 Nov ko 11:30 AM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0274,"Aapke account XX5678 mein 26 Oct ko Rs 4,999 credit hue. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0276,"Aapka Rs 9,999 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0277,Aapke account ki details 25 Oct ko update ho gayi hain. Koi action zaroori nahi.,SAFE,additional_kyc_confirmation,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0278,"Aapka order #A821269 ship ho gaya hai, 26 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0282,Aapka parcel warehouse mein ruka hai. Rs 29 redelivery fees aaj raat 9:30 baje pay karein: http://address-update-courier86.example/login,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0283,Aapki e-receipt yahan hai: https://receipts.example/r/955555. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0284,Happy birthday bhai Sunita! Party kab hai?,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0287,Reminder: Dr. Sunita ke saath aapka appointment 30 Oct ko 10:00 AM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0288,Aapki e-receipt yahan hai: https://receipts.example/r/810304. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0289,Apna order track karein: https://shop-track.example/orders/376726,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0291,Rs 499 ke payment ke liye OTP 790573 use karein. Ye code kisi ko na batayein.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0298,"Bijli bill Rs 1,500 ka due date 26 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0300,"Aapke account se Rs 2,999 kat gaye. Cancel karne ke liye 98XXXXXX79 par call karein aur OTP bataein.",SCAM,additional_fake_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0306,"Tax refund Rs 49,999 approve hua. raat 12 baje se pehle account number aur OTP confirm karein: http://it-refund-portal33.example/pay",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0309,"Aapke account se Rs 2,999 kat gaye. Cancel karne ke liye 98XXXXXX23 par call karein aur OTP bataein.",SCAM,additional_fake_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0310,"Rs 9,999 ke payment ke liye OTP 342945 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0313,Aapka parcel warehouse mein ruka hai. Rs 99 redelivery fees 2 ghante mein pay karein: http://address-update-courier77.example/claim,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0316,Rs 499 ke payment ke liye OTP 612736 use karein. Ye code kisi ko na batayein.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0317,Dhyan dein: KYC update nahi hai. Account freeze ho jayega. Yahan verify karein: http://bank-verify-now96.example/verify,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0323,"Income Tax Dept: Aap Rs 4,999 refund ke yogya hain. Bank details yahan bhejein: http://it-refund-portal80.example/update",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0325,Happy birthday bhai Amit! Party kab hai?,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0327,"Aapka order #A195203 ship ho gaya hai, 25 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0329,Aapka PAN Aadhaar se link nahi hai. Account 24 ghante mein freeze hoga. Update karein: http://pan-link-update45.example/login,SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0332,"Ghar baithe roz Rs 49,999 kamayein, videos like karke. Telegram group join karein, registration fees Rs 999.",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0333,"Traffic fine Rs 15,490. Abhi http://echallan-pay-now56.example/verify par pay karein warna licence suspend.",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0334,Aapka OTP 751403 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0338,"Policy bonus Rs 49,999 intezaar mein hai. Paise lene ke liye bank details bhejein: http://policy-renew-today18.example/claim",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0339,Aapke account ki details 26 Oct ko update ho gayi hain. Koi action zaroori nahi.,SAFE,additional_kyc_confirmation,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0342,Aapka parcel warehouse mein ruka hai. Rs 49 redelivery fees aaj shaam 6 baje tak pay karein: http://track-parcel-pay1.example/login,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0344,Delivery fail: address adhura hai. http://track-parcel-pay67.example/claim par address update karein aur Rs 49 pay karein.,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0347,"Aapki train PNR 12788226 confirm hai. Coach B2, seat 34. Departure 4:15 PM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0348,Aapka KYC expire ho gaya hai. http://kyc-update-secure70.example/verify par details aur OTP bhejein warna account band.,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0349,"Aapki train PNR 12573510 confirm hai. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0353,"Aapka SIM aaj block ho jayega, verification adhura hai. Abhi call karein: 98XXXXXX57",SCAM,additional_sim_block,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0354,"Rs 2,999 aapke account XX3456 se 26 Oct ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0356,CBI notice: aapka Aadhaar money laundering se juda hai. Abhi video call join karein warna warrant aaj jaari hoga.,SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0357,"Aapka bank account aaj raat 9:30 baje band ho jayega, KYC pending hai. Abhi update karein: http://kyc-update-secure63.example/update",SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0358,"Aapka credit card statement ready hai. Minimum due Rs 9,999, due date 2 Nov.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0359,"Refund pending: Rs 1,500. Paise lene ke liye http://upi-refund-center14.example/pay par UPI PIN daalein.",SCAM,additional_upi_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0360,Aapka order 4:15 PM baje deliver ho gaya. App mein rating dein.,SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0363,Aapki gaadi par Rs 499 ka e-challan pending hai. 24 ghante mein pay karein warna court notice: http://traffic-fine-pay73.example/update,SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0367,Unauthorised transaction Rs 499 mila. Rokne ke liye abhi verify karein: http://stop-debit-secure15.example/claim,SCAM,additional_fake_debit_alert,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0368,Aapka PAN Aadhaar se link nahi hai. Account raat 12 baje se pehle freeze hoga. Update karein: http://aadhaar-verify-now31.example/update,SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0370,"Bijli ka bill pending hai, connection aaj kat jayega. Turant call karein: 98XXXXXX12",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0374,"Badhai ho! Aapne lucky draw mein Rs 10,00,000 jeete hain. Claim ke liye Rs 25,000 fees bhejein: http://claim-prize-india74.example/verify",SCAM,additional_lottery_prize,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0376,Dhyan dein: KYC update nahi hai. Account freeze ho jayega. Yahan verify karein: http://bank-verify-now20.example/login,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0377,Aapka KYC complete ho gaya hai. Aur kuch karne ki zarurat nahi.,SAFE,additional_kyc_confirmation,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0380,"Aapka Rs 15,490 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0382,"Aadhaar verification pending. Penalty Rs 9,999 se bachne ke liye http://pan-link-update30.example/verify par OTP daalein.",SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0383,"Rs 9,999 aapke account XX3456 se 5 Nov ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0387,"Aapki train PNR 12165467 confirm hai. Coach B2, seat 34. Departure 4:15 PM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0390,"Hamare VIP stock tips group se judein. 10 din mein 30% guaranteed return. Seats limited, aaj Rs 25,000 jama karein.",SCAM,additional_investment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0391,"Sir, galti se mera OTP aapke number par chala gaya. Please 6 digit code bata dijiye.",SCAM,additional_otp_by_mistake,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0401,"Bijli ka bill pending hai, connection 24 ghante mein kat jayega. Turant call karein: 98XXXXXX31",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0403,"Aapke account XX5678 mein 2 Nov ko Rs 25,000 credit hue. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0406,"Aapke credit card ke reward points (Rs 9,999) aaj raat 9:30 baje expire ho rahe hain. Abhi redeem karein: http://reward-points-redeem43.example/login",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0410,"Part-time job offer! Salary Rs 30,000 mahina. Joining confirm karne ke liye Rs 499 deposit bhejein. WhatsApp: 98XXXXXX22",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0413,"Traffic fine Rs 2,999. Abhi http://traffic-fine-pay19.example/update par pay karein warna licence suspend.",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0416,Apna order track karein: https://shop-track.example/orders/670848,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0418,"Aapka FASTag low balance ki wajah se block hai. Abhi Rs 9,999 recharge karein: http://fastag-recharge-help84.example/pay",SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0419,"Aapke credit card ke reward points (Rs 2,999) 2 ghante mein expire ho rahe hain. Abhi redeem karein: http://cashback-claim-now68.example/verify",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0422,Aapki class 25 Oct ko 4:15 PM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0425,Dhyan dein: KYC update nahi hai. Account freeze ho jayega. Yahan verify karein: http://bank-verify-now99.example/verify,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0427,Aapka order 11:30 AM baje deliver ho gaya. App mein rating dein.,SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0429,"Bijli bill Rs 4,999 ka due date 25 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0433,"Bijli bill Rs 2,999 ka due date 2 Nov hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0434,"Aapke account se Rs 25,000 kat gaye. Cancel karne ke liye 98XXXXXX14 par call karein aur OTP bataein.",SCAM,additional_fake_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0437,"Aapki gaadi par Rs 25,000 ka e-challan pending hai. 24 ghante mein pay karein warna court notice: http://echallan-pay-now68.example/update",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0442,FASTag KYC pending hai. 24 ghante mein update karein warna tag band: http://fastag-kyc-update92.example/update,SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0444,"Policy bonus Rs 49,999 intezaar mein hai. Paise lene ke liye bank details bhejein: http://policy-renew-today92.example/update",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0451,Aapka OTP 319283 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0452,"Policy bonus Rs 15,490 intezaar mein hai. Paise lene ke liye bank details bhejein: http://policy-renew-today91.example/login",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0454,"Aapka SIM 2 ghante mein block ho jayega, verification adhura hai. Abhi call karein: 98XXXXXX14",SCAM,additional_sim_block,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0457,Rs 999 aapke account XX3456 se 30 Oct ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.,SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0466,"Priya upbhokta, pichle mahine ka bill update nahi hua. Bijli aaj shaam 6 baje tak band hogi. Officer se baat karein: 98XXXXXX19",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0467,Tax refund Rs 499 approve hua. aaj shaam 6 baje tak account number aur OTP confirm karein: http://tax-refund-claim93.example/pay,SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0468,Refund pending: Rs 499. Paise lene ke liye http://refund-upi-claim30.example/claim par UPI PIN daalein.,SCAM,additional_upi_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0474,"Aadhaar verification pending. Penalty Rs 1,500 se bachne ke liye http://pan-link-update75.example/login par OTP daalein.",SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0475,"Income Tax Dept: Aap Rs 4,999 refund ke yogya hain. Bank details yahan bhejein: http://it-refund-portal74.example/claim",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0476,"Aapka order #A203263 ship ho gaya hai, 25 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0477,"Aapki EMI Rs 15,490 26 Oct ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0479,"Crypto double scheme: Rs 49,999 lagayein, 7 din mein double. Bilkul safe. Join: http://crypto-double-join1.example/verify",SCAM,additional_investment,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0480,"Crypto double scheme: Rs 4,999 lagayein, 7 din mein double. Bilkul safe. Join: http://vip-stock-tips31.example/verify",SCAM,additional_investment,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0481,"Priya upbhokta, pichle mahine ka bill update nahi hua. Bijli raat 12 baje se pehle band hogi. Officer se baat karein: 98XXXXXX19",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0484,"Ghar baithe roz Rs 4,999 kamayein, videos like karke. Telegram group join karein, registration fees Rs 999.",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0488,"Aapka SIM 24 ghante mein block ho jayega, verification adhura hai. Abhi call karein: 98XXXXXX69",SCAM,additional_sim_block,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0490,"Aapki EMI Rs 15,490 5 Nov ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0492,"Traffic fine Rs 2,999. Abhi http://echallan-pay-now48.example/verify par pay karein warna licence suspend.",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0494,"Aapki train PNR 12692339 confirm hai. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0495,CBI notice: aapka Aadhaar money laundering se juda hai. Abhi video call join karein warna warrant aaj shaam 6 baje tak jaari hoga.,SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0499,"Hello, galti se Rs 9,999 aapko transfer ho gaye. Reverse karne ke liye jo OTP aaya woh bata dijiye.",SCAM,additional_otp_by_mistake,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0501,"Rs 9,999 ke payment ke liye OTP 138977 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0503,CBI notice: aapka Aadhaar money laundering se juda hai. Abhi video call join karein warna warrant aaj raat 9:30 baje jaari hoga.,SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0506,Aapka OTP 643410 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0508,Aapki class 25 Oct ko 11:30 AM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0511,"Aapka credit card statement ready hai. Minimum due Rs 1,500, due date 25 Oct.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0513,"Aapki EMI Rs 1,500 5 Nov ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0514,"Aapka Rs 49,999 ka refund ready hai. UPI request approve karein aur paise le lein. aaj shaam 6 baje tak tak valid.",SCAM,additional_upi_refund,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0521,Delivery fail: address adhura hai. http://track-parcel-pay11.example/verify par address update karein aur Rs 49 pay karein.,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0523,Aapki e-receipt yahan hai: https://receipts.example/r/264882. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0526,FASTag KYC pending hai. aaj raat 9:30 baje update karein warna tag band: http://fastag-kyc-update37.example/pay,SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0527,"Aapke credit card ke reward points (Rs 15,490) aaj raat 9:30 baje expire ho rahe hain. Abhi redeem karein: http://reward-points-redeem67.example/claim",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0528,Aapki class 5 Nov ko 10:00 AM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0536,"Income Tax Dept: Aap Rs 25,000 refund ke yogya hain. Bank details yahan bhejein: http://tax-refund-claim45.example/update",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0540,"Aadhaar verification pending. Penalty Rs 4,999 se bachne ke liye http://aadhaar-verify-now48.example/pay par OTP daalein.",SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0545,"Aapki insurance policy 2 ghante mein lapse ho jayegi. Premium Rs 49,999 yahan pay karein: http://policy-renew-today42.example/claim",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0547,"Aapki train PNR 12995841 confirm hai. Coach B2, seat 34. Departure 4:15 PM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0549,"Aapka order #A309898 ship ho gaya hai, 30 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0550,"Aapke credit card ke reward points (Rs 15,490) raat 12 baje se pehle expire ho rahe hain. Abhi redeem karein: http://cashback-claim-now22.example/login",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0552,"Aapka order #A506233 ship ho gaya hai, 5 Nov tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0554,Apna order track karein: https://shop-track.example/orders/968423,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0555,"Aap Rs 10,00,000 ke inaam ke liye select hue hain. Rs 499 fees aaj shaam 6 baje tak bhejein. Call: 98XXXXXX27",SCAM,additional_lottery_prize,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0556,"Rs 9,999 ke payment ke liye OTP 799302 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0558,FASTag KYC pending hai. aaj raat 9:30 baje update karein warna tag band: http://fastag-recharge-help44.example/claim,SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0560,Aapki cab 3 minute mein pahunch rahi hai. Driver: Sunita.,SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0563,Aapka PAN Aadhaar se link nahi hai. Account raat 12 baje se pehle freeze hoga. Update karein: http://aadhaar-verify-now77.example/pay,SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0565,"Rs 4,999 ke payment ke liye OTP 371636 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0567,"Priya upbhokta, pichle mahine ka bill update nahi hua. Bijli aaj raat 9:30 baje band hogi. Officer se baat karein: 98XXXXXX54",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0568,"Badhai ho! Aapne lucky draw mein Rs 50,00,000 jeete hain. Claim ke liye Rs 4,999 fees bhejein: http://lucky-draw-winner96.example/claim",SCAM,additional_lottery_prize,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0569,Aapka gas cylinder booking confirm hai. 2 din mein delivery hogi.,SAFE,additional_delivery_done,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0576,Aapka Rs 999 ka recharge ho gaya hai. Validity 28 din.,SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0578,"Badhai ho! Aapne lucky draw mein Rs 5,00,000 jeete hain. Claim ke liye Rs 499 fees bhejein: http://lucky-draw-winner6.example/pay",SCAM,additional_lottery_prize,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0581,"Aadhaar verification pending. Penalty Rs 4,999 se bachne ke liye http://pan-link-update71.example/pay par OTP daalein.",SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0582,"Unauthorised transaction Rs 4,999 mila. Rokne ke liye abhi verify karein: http://stop-debit-secure11.example/claim",SCAM,additional_fake_debit_alert,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0583,FASTag KYC pending hai. 2 ghante mein update karein warna tag band: http://fastag-recharge-help39.example/claim,SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0585,"Bijli ka bill pending hai, connection 24 ghante mein kat jayega. Turant call karein: 98XXXXXX77",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0588,"Reminder: broadband bill Rs 15,490 2 Nov ko due hai. Auto-pay on hai.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0593,"Income Tax Dept: Aap Rs 9,999 refund ke yogya hain. Bank details yahan bhejein: http://it-refund-portal50.example/pay",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0597,"Policy bonus Rs 15,490 intezaar mein hai. Paise lene ke liye bank details bhejein: http://policy-bonus-claim87.example/pay",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0598,Aapki class 26 Oct ko 6:45 PM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0601,"Ghar baithe roz Rs 1,500 kamayein, videos like karke. Telegram group join karein, registration fees Rs 999.",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0602,"Rs 4,999 aapke account XX3456 se 5 Nov ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0603,"Aapka Rs 4,999 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0604,Aapki class 30 Oct ko 11:30 AM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0605,"Salary Rs 4,999 account XX1234 mein aa gayi. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0606,"Pre-approved loan! Pehle Rs 15,490 insurance fees bhejein. Offer 2 ghante mein khatam.",SCAM,additional_loan_app,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0607,"Aapka FASTag low balance ki wajah se block hai. Abhi Rs 15,490 recharge karein: http://fastag-recharge-help75.example/claim",SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0610,"Aapke credit card ke reward points (Rs 15,490) raat 12 baje se pehle expire ho rahe hain. Abhi redeem karein: http://reward-points-redeem53.example/pay",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0614,"UPI: Rs 999 merchant ko A/c XX3456 se 26 Oct ko pay hue. Balance Rs 7,310.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0617,"Aapka order #A692407 ship ho gaya hai, 30 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0618,"Aapka bank account 24 ghante mein band ho jayega, KYC pending hai. Abhi update karein: http://kyc-update-secure72.example/login",SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0619,"Aapki train PNR 12647267 confirm hai. Coach B2, seat 34. Departure 4:15 PM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0621,"Hamare VIP stock tips group se judein. 10 din mein 30% guaranteed return. Seats limited, aaj Rs 499 jama karein.",SCAM,additional_investment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0624,Apna order track karein: https://shop-track.example/orders/184914,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0625,"Aapka Rs 2,999 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0627,Aapki e-receipt yahan hai: https://receipts.example/r/326603. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0630,"Aapki insurance policy raat 12 baje se pehle lapse ho jayegi. Premium Rs 49,999 yahan pay karein: http://policy-renew-today21.example/pay",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0632,Reminder: Dr. Sunita ke saath aapka appointment 25 Oct ko 4:15 PM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0637,"Salary Rs 9,999 account XX9012 mein aa gayi. Balance Rs 7,310.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0640,Aapka data pack 80% use ho gaya hai. Zarurat ho to official app se recharge karein.,SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0644,"Aapka SIM raat 12 baje se pehle block ho jayega, verification adhura hai. Abhi call karein: 98XXXXXX31",SCAM,additional_sim_block,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0648,"Pre-approved loan! Pehle Rs 25,000 insurance fees bhejein. Offer aaj raat 9:30 baje khatam.",SCAM,additional_loan_app,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0650,"Ghar baithe roz Rs 15,490 kamayein, videos like karke. Telegram group join karein, registration fees Rs 999.",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0651,"Badhai ho! Aapne lucky draw mein Rs 50,00,000 jeete hain. Claim ke liye Rs 49,999 fees bhejein: http://claim-prize-india80.example/pay",SCAM,additional_lottery_prize,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0654,Aapke account ki details 30 Oct ko update ho gayi hain. Koi action zaroori nahi.,SAFE,additional_kyc_confirmation,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0657,Delivery fail: address adhura hai. http://track-parcel-pay54.example/verify par address update karein aur Rs 49 pay karein.,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0658,Aapka Rs 999 ka refund ready hai. UPI request approve karein aur paise le lein. aaj tak valid.,SCAM,additional_upi_refund,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0663,"Aapka FASTag low balance ki wajah se block hai. Abhi Rs 25,000 recharge karein: http://fastag-recharge-help59.example/update",SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0664,"Hamare VIP stock tips group se judein. 10 din mein 30% guaranteed return. Seats limited, aaj Rs 2,999 jama karein.",SCAM,additional_investment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0665,Dhyan rakhein: bank kabhi bhi aapse OTP ya PIN nahi maangta. Kisi ko share na karein.,SAFE,additional_safety_awareness,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0666,"Aapki EMI Rs 1,500 25 Oct ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0668,"Unauthorised transaction Rs 4,999 mila. Rokne ke liye abhi verify karein: http://verify-transaction-now9.example/claim",SCAM,additional_fake_debit_alert,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0669,Happy birthday bhai Ramesh! Party kab hai?,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0671,"Income Tax Dept: Aap Rs 25,000 refund ke yogya hain. Bank details yahan bhejein: http://tax-refund-claim24.example/verify",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0672,"Aapka Rs 25,000 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0674,"Aapki EMI Rs 9,999 2 Nov ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0675,Aapki class 26 Oct ko 10:00 AM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0676,"Salary Rs 1,500 account XX9012 mein aa gayi. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0684,"Aap Rs 10,00,000 ke inaam ke liye select hue hain. Rs 25,000 fees raat 12 baje se pehle bhejein. Call: 98XXXXXX70",SCAM,additional_lottery_prize,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0687,"Badhai ho! Aapne lucky draw mein Rs 5,00,000 jeete hain. Claim ke liye Rs 4,999 fees bhejein: http://lucky-draw-winner4.example/update",SCAM,additional_lottery_prize,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0690,Reminder: Dr. Ramesh ke saath aapka appointment 2 Nov ko 11:30 AM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0691,"Pre-approved loan! Pehle Rs 4,999 insurance fees bhejein. Offer raat 12 baje se pehle khatam.",SCAM,additional_loan_app,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0696,"Aapke account XX1234 mein 30 Oct ko Rs 499 credit hue. Balance Rs 7,310.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0700,"Tax refund Rs 4,999 approve hua. aaj raat 9:30 baje account number aur OTP confirm karein: http://tax-refund-claim37.example/verify",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0705,"Aapke account XX3456 mein 2 Nov ko Rs 2,999 credit hue. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0706,"Tax refund Rs 49,999 approve hua. 24 ghante mein account number aur OTP confirm karein: http://it-refund-portal8.example/claim",SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0709,"Aapke account XX1234 mein 26 Oct ko Rs 25,000 credit hue. Balance Rs 2,145.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0710,Aapki class 2 Nov ko 6:45 PM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0711,"Aapke account XX5678 mein 26 Oct ko Rs 1,500 credit hue. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0717,"Aapke account XX1234 mein 30 Oct ko Rs 25,000 credit hue. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0718,"Bina document ke Rs 50,000 tak instant loan approve! App install karein, processing fees Rs 49,999: http://loan-instant-apply32.example/verify",SCAM,additional_loan_app,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0720,Aapka PAN Aadhaar se link nahi hai. Account aaj freeze hoga. Update karein: http://aadhaar-verify-now40.example/verify,SCAM,additional_pan_aadhaar_update,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0721,"Hello, galti se Rs 25,000 aapko transfer ho gaye. Reverse karne ke liye jo OTP aaya woh bata dijiye.",SCAM,additional_otp_by_mistake,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0722,Apna order track karein: https://shop-track.example/orders/745928,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0723,CBI notice: aapka Aadhaar money laundering se juda hai. Abhi video call join karein warna warrant 24 ghante mein jaari hoga.,SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0726,Reminder: broadband bill Rs 499 25 Oct ko due hai. Auto-pay on hai.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0727,"Aapka SIM aaj shaam 6 baje tak block ho jayega, verification adhura hai. Abhi call karein: 98XXXXXX95",SCAM,additional_sim_block,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0728,"Rs 9,999 aapke account XX9012 se 25 Oct ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0729,"Bina document ke Rs 50,000 tak instant loan approve! App install karein, processing fees Rs 49,999: http://loan-instant-apply15.example/pay",SCAM,additional_loan_app,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0735,"Aapki EMI Rs 4,999 26 Oct ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0736,Kya aaj 4:15 PM par milna hai? Project ke baare mein baat karni hai.,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0742,"Aapka Rs 49,999 ka recharge ho gaya hai. Validity 28 din.",SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0744,"Aapka credit card statement ready hai. Minimum due Rs 999, due date 5 Nov.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0746,"Aapki train PNR 12846476 confirm hai. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0749,"Part-time job offer! Salary Rs 30,000 mahina. Joining confirm karne ke liye Rs 999 deposit bhejein. WhatsApp: 98XXXXXX49",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0754,"Reminder: broadband bill Rs 49,999 2 Nov ko due hai. Auto-pay on hai.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0755,Happy birthday bhai Farhan! Party kab hai?,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0756,"Salary Rs 1,500 account XX5678 mein aa gayi. Balance Rs 2,145.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0758,"Hello, galti se Rs 499 aapko transfer ho gaye. Reverse karne ke liye jo OTP aaya woh bata dijiye.",SCAM,additional_otp_by_mistake,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0760,Kya aaj 6:45 PM par milna hai? Project ke baare mein baat karni hai.,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0761,Reminder: Dr. Farhan ke saath aapka appointment 5 Nov ko 4:15 PM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0762,Aapki e-receipt yahan hai: https://receipts.example/r/433533. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0763,"Bijli bill Rs 25,000 ka due date 25 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0767,"Traffic fine Rs 9,999. Abhi http://echallan-pay-now15.example/claim par pay karein warna licence suspend.",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0768,"Rs 9,999 aapke account XX1234 se 5 Nov ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0769,"Bijli bill Rs 2,999 ka due date 25 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0771,Aapka KYC expire ho gaya hai. http://bank-verify-now99.example/login par details aur OTP bhejein warna account band.,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0772,Telecom notice: SIM verification fail. http://telecom-kyc-now6.example/verify par Aadhaar aur OTP bhejein warna number band.,SCAM,additional_sim_block,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0773,"Rs 15,490 aapke account XX9012 se 26 Oct ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0776,"Aapka Rs 25,000 ka refund ready hai. UPI request approve karein aur paise le lein. aaj tak valid.",SCAM,additional_upi_refund,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0785,"Aapki EMI Rs 25,000 26 Oct ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0786,"Rs 4,999 ke payment ke liye OTP 516365 use karein. Ye code kisi ko na batayein.",SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0787,"Bijli ka bill pending hai, connection 24 ghante mein kat jayega. Turant call karein: 98XXXXXX55",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0791,Reminder: broadband bill Rs 499 26 Oct ko due hai. Auto-pay on hai.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0792,Kya aaj 10:00 AM par milna hai? Project ke baare mein baat karni hai.,SAFE,additional_personal_chat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0794,"Badhai ho! Aapne lucky draw mein Rs 5,00,000 jeete hain. Claim ke liye Rs 2,999 fees bhejein: http://lucky-draw-winner24.example/login",SCAM,additional_lottery_prize,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0797,"UPI: Rs 4,999 merchant ko A/c XX9012 se 2 Nov ko pay hue. Balance Rs 52,880.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0798,Telecom notice: SIM verification fail. http://telecom-kyc-now7.example/login par Aadhaar aur OTP bhejein warna number band.,SCAM,additional_sim_block,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0799,Apna order track karein: https://shop-track.example/orders/977027,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0801,Telecom notice: SIM verification fail. http://telecom-kyc-now4.example/update par Aadhaar aur OTP bhejein warna number band.,SCAM,additional_sim_block,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0803,Aapki class 5 Nov ko 6:45 PM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0807,"Aap Rs 50,00,000 ke inaam ke liye select hue hain. Rs 1,500 fees aaj shaam 6 baje tak bhejein. Call: 98XXXXXX67",SCAM,additional_lottery_prize,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0810,Delivery fail: address adhura hai. http://track-parcel-pay35.example/pay par address update karein aur Rs 49 pay karein.,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0814,Unauthorised transaction Rs 999 mila. Rokne ke liye abhi verify karein: http://stop-debit-secure43.example/update,SCAM,additional_fake_debit_alert,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0815,"Aapki insurance policy 24 ghante mein lapse ho jayegi. Premium Rs 15,490 yahan pay karein: http://policy-bonus-claim14.example/pay",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0817,Aapka Rs 499 ka recharge ho gaya hai. Validity 28 din.,SAFE,additional_recharge,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0820,"Aapka credit card statement ready hai. Minimum due Rs 999, due date 2 Nov.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0823,Apna order track karein: https://shop-track.example/orders/866678,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0824,Aapki EMI Rs 999 5 Nov ko debit hogi. Balance rakhein.,SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0828,Aapka OTP 785614 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0830,"Aapki gaadi par Rs 49,999 ka e-challan pending hai. aaj shaam 6 baje tak pay karein warna court notice: http://traffic-fine-pay51.example/claim",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0831,Pre-approved loan! Pehle Rs 499 insurance fees bhejein. Offer 24 ghante mein khatam.,SCAM,additional_loan_app,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0835,"Reminder: broadband bill Rs 25,000 26 Oct ko due hai. Auto-pay on hai.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0836,Aapki e-receipt yahan hai: https://receipts.example/r/638865. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0837,"Aapki EMI Rs 2,999 30 Oct ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0839,"Aapka credit card statement ready hai. Minimum due Rs 1,500, due date 30 Oct.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0841,"Priya upbhokta, pichle mahine ka bill update nahi hua. Bijli aaj raat 9:30 baje band hogi. Officer se baat karein: 98XXXXXX35",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0843,"Aapke credit card ke reward points (Rs 2,999) aaj raat 9:30 baje expire ho rahe hain. Abhi redeem karein: http://cashback-claim-now17.example/verify",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0845,"Hello, galti se Rs 49,999 aapko transfer ho gaye. Reverse karne ke liye jo OTP aaya woh bata dijiye.",SCAM,additional_otp_by_mistake,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0847,"Aap Rs 10,00,000 ke inaam ke liye select hue hain. Rs 15,490 fees aaj shaam 6 baje tak bhejein. Call: 98XXXXXX19",SCAM,additional_lottery_prize,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0849,Aapki cab 3 minute mein pahunch rahi hai. Driver: Meena.,SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0851,"UPI: Rs 999 merchant ko A/c XX5678 se 5 Nov ko pay hue. Balance Rs 52,880.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0852,"Aapka Rs 4,999 ka refund ready hai. UPI request approve karein aur paise le lein. aaj shaam 6 baje tak tak valid.",SCAM,additional_upi_refund,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0854,"Aapka bank account 24 ghante mein band ho jayega, KYC pending hai. Abhi update karein: http://bank-verify-now7.example/pay",SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0855,"UPI: Rs 15,490 merchant ko A/c XX3456 se 26 Oct ko pay hue. Balance Rs 7,310.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0858,"Aapka credit card statement ready hai. Minimum due Rs 9,999, due date 30 Oct.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0860,Aapka OTP 140234 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0861,"Ghar baithe roz Rs 499 kamayein, videos like karke. Telegram group join karein, registration fees Rs 999.",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0863,"Reward points expire hone wale hain. Rs 4,999 cashback aaj shaam 6 baje tak claim karein: http://cashback-claim-now78.example/claim",SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0872,Reminder: broadband bill Rs 499 30 Oct ko due hai. Auto-pay on hai.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0876,"Hamare VIP stock tips group se judein. 10 din mein 30% guaranteed return. Seats limited, aaj Rs 4,999 jama karein.",SCAM,additional_investment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0878,Reward points expire hone wale hain. Rs 499 cashback 2 ghante mein claim karein: http://cashback-claim-now48.example/update,SCAM,additional_reward_points,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0879,"Ghar baithe roz Rs 999 kamayein, videos like karke. Telegram group join karein, registration fees Rs 999.",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0882,"Aapki EMI Rs 2,999 2 Nov ko debit hogi. Balance rakhein.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0883,CBI notice: aapka Aadhaar money laundering se juda hai. Abhi video call join karein warna warrant 2 ghante mein jaari hoga.,SCAM,additional_digital_arrest,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0888,Bijli bill Rs 999 ka due date 30 Oct hai. Late fee se bachne ke liye official app se pay karein.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0896,Aapka parcel warehouse mein ruka hai. Rs 99 redelivery fees 2 ghante mein pay karein: http://address-update-courier30.example/claim,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0899,"Crypto double scheme: Rs 9,999 lagayein, 7 din mein double. Bilkul safe. Join: http://crypto-double-join26.example/claim",SCAM,additional_investment,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0904,"Reminder: broadband bill Rs 15,490 5 Nov ko due hai. Auto-pay on hai.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0906,Reminder: Dr. Ramesh ke saath aapka appointment 30 Oct ko 6:45 PM par hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0908,"Aapki train PNR 12936712 confirm hai. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0909,"Part-time job offer! Salary Rs 30,000 mahina. Joining confirm karne ke liye Rs 49,999 deposit bhejein. WhatsApp: 98XXXXXX10",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0915,"Aap Rs 10,00,000 ke inaam ke liye select hue hain. Rs 15,490 fees 24 ghante mein bhejein. Call: 98XXXXXX85",SCAM,additional_lottery_prize,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0918,Aapka KYC expire ho gaya hai. http://kyc-update-secure69.example/verify par details aur OTP bhejein warna account band.,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0919,Dhyan dein: KYC update nahi hai. Account freeze ho jayega. Yahan verify karein: http://bank-verify-now34.example/verify,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0920,"Aapka order #A488813 ship ho gaya hai, 25 Oct tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0922,Delivery fail: address adhura hai. http://track-parcel-pay61.example/claim par address update karein aur Rs 49 pay karein.,SCAM,additional_courier_fee,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0925,Tax refund Rs 499 approve hua. 2 ghante mein account number aur OTP confirm karein: http://it-refund-portal27.example/verify,SCAM,additional_tax_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0927,"Rs 2,999 aapke account XX3456 se 30 Oct ko debit hue. Agar aapne nahi kiya to card ke peeche diye number par call karein.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0929,"Bina document ke Rs 50,000 tak instant loan approve! App install karein, processing fees Rs 25,000: http://loan-instant-apply79.example/pay",SCAM,additional_loan_app,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0931,"Bijli ka bill pending hai, connection aaj raat 9:30 baje kat jayega. Turant call karein: 98XXXXXX11",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0933,Bijli bill Rs 499 ka due date 30 Oct hai. Late fee se bachne ke liye official app se pay karein.,SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0934,"Aapka SIM aaj block ho jayega, verification adhura hai. Abhi call karein: 98XXXXXX78",SCAM,additional_sim_block,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0936,"Salary Rs 2,999 account XX5678 mein aa gayi. Balance Rs 2,145.",SAFE,additional_credit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0940,"Aapka FASTag low balance ki wajah se block hai. Abhi Rs 15,490 recharge karein: http://fastag-kyc-update3.example/update",SCAM,additional_fastag,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0943,Aapki e-receipt yahan hai: https://receipts.example/r/991896. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0944,"Policy bonus Rs 9,999 intezaar mein hai. Paise lene ke liye bank details bhejein: http://policy-renew-today36.example/login",SCAM,additional_insurance_lapse,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0945,Aapki e-receipt yahan hai: https://receipts.example/r/361602. Koi payment nahi karna.,SAFE,additional_official_link_genuine,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0947,"UPI: Rs 25,000 merchant ko A/c XX9012 se 26 Oct ko pay hue. Balance Rs 7,310.",SAFE,additional_debit_alert,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0948,Telecom notice: SIM verification fail. http://telecom-kyc-now7.example/pay par Aadhaar aur OTP bhejein warna number band.,SCAM,additional_sim_block,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0949,"Aapka order #A868781 ship ho gaya hai, 5 Nov tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0952,Aapka parcel 10:00 AM baje reception par pahunch gaya.,SAFE,additional_delivery_done,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0955,"Bijli ka bill pending hai, connection aaj raat 9:30 baje kat jayega. Turant call karein: 98XXXXXX49",SCAM,additional_electricity_threat,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0958,"Bijli bill Rs 49,999 ka due date 30 Oct hai. Late fee se bachne ke liye official app se pay karein.",SAFE,additional_bill_reminder,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0961,"Aapki gaadi par Rs 9,999 ka e-challan pending hai. aaj shaam 6 baje tak pay karein warna court notice: http://echallan-pay-now9.example/update",SCAM,additional_e_challan,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0971,"Hamare VIP stock tips group se judein. 10 din mein 30% guaranteed return. Seats limited, aaj Rs 15,490 jama karein.",SCAM,additional_investment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0972,Aapki class 2 Nov ko 11:30 AM par reschedule ho gayi hai.,SAFE,additional_appointment,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0974,Pre-approved loan! Pehle Rs 999 insurance fees bhejein. Offer aaj shaam 6 baje tak khatam.,SCAM,additional_loan_app,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0979,"Aapki train PNR 12377499 confirm hai. Coach B2, seat 34. Departure 6:45 PM.",SAFE,additional_travel,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0980,Aapka order 6:45 PM baje deliver ho gaya. App mein rating dein.,SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0982,Refund pending: Rs 999. Paise lene ke liye http://upi-refund-center62.example/pay par UPI PIN daalein.,SCAM,additional_upi_refund,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0985,"Aapka bank account aaj raat 9:30 baje band ho jayega, KYC pending hai. Abhi update karein: http://kyc-update-secure37.example/login",SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0988,Aapka OTP 379398 hai. Ise kisi ke saath share na karein. 10 minute tak valid.,SAFE,additional_bank_otp,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0989,Dhyan dein: KYC update nahi hai. Account freeze ho jayega. Yahan verify karein: http://kyc-update-secure96.example/claim,SCAM,additional_fake_kyc,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0993,"Aapka credit card statement ready hai. Minimum due Rs 25,000, due date 26 Oct.",SAFE,additional_statement,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0995,"Part-time job offer! Salary Rs 30,000 mahina. Joining confirm karne ke liye Rs 4,999 deposit bhejein. WhatsApp: 98XXXXXX87",SCAM,additional_fake_job,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0997,"Aapka order #A976719 ship ho gaya hai, 5 Nov tak pahunchega. App mein track karein.",SAFE,additional_order_update,,no,hinglish,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0998,"Crypto double scheme: Rs 25,000 lagayein, 7 din mein double. Bilkul safe. Join: http://crypto-double-join73.example/verify",SCAM,additional_investment,,yes,hinglish,synthetic,SYN_C_CLAUDE_20261027,train

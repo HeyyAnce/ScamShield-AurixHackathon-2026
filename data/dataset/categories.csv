@@ -1,22 +1,54 @@
-﻿category,plain_name,group,english_messages,hinglish_messages,scam,suspicious,safe
-banking_kyc_account_block,Bank KYC / account block,scam_type,22,20,32,10,0
-courier_parcel_customs_scam,"Courier, parcel or customs fee",scam_type,21,20,31,10,0
-digital_arrest_police_govt_impersonation,Digital arrest / police or government impersonation,scam_type,19,19,30,8,0
-electricity_bill_disconnection,Electricity bill disconnection threat,scam_type,20,19,31,8,0
-fake_job_task_scam,Fake job or online task,scam_type,20,19,31,8,0
-impersonation_support_friends_relatives,"Impersonating relatives, friends or support",scam_type,18,18,28,8,0
-investment_trading_crypto_scam,"Investment, trading or crypto",scam_type,18,17,29,6,0
-lottery_prize_reward_scam,"Lottery, prize or reward",scam_type,26,17,37,6,0
-malicious_apk_remote_access,Malicious APK or remote-access app,scam_type,18,17,29,6,0
-other_india_relevant_scam,Other India-specific scam,scam_type,19,19,28,10,0
-phishing_credential_theft,Phishing / credential theft,scam_type,26,17,37,6,0
-refund_cashback_fake_support_scam,"Refund, cashback or fake customer care",scam_type,26,17,37,6,0
-upi_qr_payment_scam,UPI / QR payment trick,scam_type,20,19,31,8,0
-educational_fraud_warning,Fraud-awareness message,genuine_type,16,14,0,0,30
-legitimate_banking_transaction,Genuine bank transaction alert,genuine_type,20,20,0,0,40
-legitimate_customer_support,Genuine customer support,genuine_type,20,21,0,0,41
-legitimate_delivery_update,Genuine delivery update,genuine_type,15,14,0,0,29
-legitimate_recruitment,Genuine recruitment message,genuine_type,12,13,0,0,25
-legitimate_upi_payment,Genuine UPI payment message,genuine_type,14,15,0,0,29
-legitimate_utility_bill,Genuine utility bill notice,genuine_type,14,14,0,0,28
-personal_conversation,Everyday personal conversation,genuine_type,198,17,0,0,215
+category,plain_name,group,english_messages,hinglish_messages,scam,suspicious,safe,hindi_messages
+banking_kyc_account_block,Bank KYC / account block,scam_type,22,20,32,10,0,0
+courier_parcel_customs_scam,"Courier, parcel or customs fee",scam_type,21,20,31,10,0,0
+digital_arrest_police_govt_impersonation,Digital arrest / police or government impersonation,scam_type,19,19,30,8,0,0
+electricity_bill_disconnection,Electricity bill disconnection threat,scam_type,20,19,31,8,0,0
+fake_job_task_scam,Fake job or online task,scam_type,20,19,31,8,0,0
+impersonation_support_friends_relatives,"Impersonating relatives, friends or support",scam_type,18,18,28,8,0,0
+investment_trading_crypto_scam,"Investment, trading or crypto",scam_type,18,17,29,6,0,0
+lottery_prize_reward_scam,"Lottery, prize or reward",scam_type,26,17,37,6,0,0
+malicious_apk_remote_access,Malicious APK or remote-access app,scam_type,18,17,29,6,0,0
+other_india_relevant_scam,Other India-specific scam,scam_type,19,19,28,10,0,0
+phishing_credential_theft,Phishing / credential theft,scam_type,26,17,37,6,0,0
+refund_cashback_fake_support_scam,"Refund, cashback or fake customer care",scam_type,26,17,37,6,0,0
+upi_qr_payment_scam,UPI / QR payment trick,scam_type,20,19,31,8,0,0
+educational_fraud_warning,Fraud-awareness message,genuine_type,16,14,0,0,30,0
+legitimate_banking_transaction,Genuine bank transaction alert,genuine_type,20,20,0,0,40,0
+legitimate_customer_support,Genuine customer support,genuine_type,20,21,0,0,41,0
+legitimate_delivery_update,Genuine delivery update,genuine_type,15,14,0,0,29,0
+legitimate_recruitment,Genuine recruitment message,genuine_type,12,13,0,0,25,0
+legitimate_upi_payment,Genuine UPI payment message,genuine_type,14,15,0,0,29,0
+legitimate_utility_bill,Genuine utility bill notice,genuine_type,14,14,0,0,28,0
+personal_conversation,Everyday personal conversation,genuine_type,198,17,0,0,215,0
+additional_appointment,Appointment,additional_synthetic,20,20,0,0,48,8
+additional_bank_otp,Bank Otp,additional_synthetic,20,20,0,0,50,10
+additional_bill_reminder,Bill Reminder,additional_synthetic,20,20,0,0,48,8
+additional_courier_fee,Courier Fee,additional_synthetic,12,12,30,0,0,6
+additional_credit_alert,Credit Alert,additional_synthetic,20,20,0,0,48,8
+additional_debit_alert,Debit Alert,additional_synthetic,20,20,0,0,49,9
+additional_delivery_done,Delivery Done,additional_synthetic,5,5,0,0,15,5
+additional_digital_arrest,Digital Arrest,additional_synthetic,7,7,16,0,0,2
+additional_e_challan,E Challan,additional_synthetic,10,10,26,0,0,6
+additional_electricity_threat,Electricity Threat,additional_synthetic,12,12,30,0,0,6
+additional_fake_debit_alert,Fake Debit Alert,additional_synthetic,10,10,26,0,0,6
+additional_fake_job,Fake Job,additional_synthetic,12,12,30,0,0,6
+additional_fake_kyc,Fake Kyc,additional_synthetic,18,18,42,0,0,6
+additional_fastag,Fastag,additional_synthetic,10,10,26,0,0,6
+additional_insurance_lapse,Insurance Lapse,additional_synthetic,10,10,26,0,0,6
+additional_investment,Investment,additional_synthetic,12,12,30,0,0,6
+additional_kyc_confirmation,Kyc Confirmation,additional_synthetic,6,6,0,0,17,5
+additional_loan_app,Loan App,additional_synthetic,12,12,30,0,0,6
+additional_lottery_prize,Lottery Prize,additional_synthetic,12,12,30,0,0,6
+additional_official_link_genuine,Official Link Genuine,additional_synthetic,18,19,0,0,45,8
+additional_order_update,Order Update,additional_synthetic,14,14,0,0,36,8
+additional_otp_by_mistake,Otp By Mistake,additional_synthetic,6,6,16,0,0,4
+additional_pan_aadhaar_update,Pan Aadhaar Update,additional_synthetic,10,10,24,0,0,4
+additional_personal_chat,Personal Chat,additional_synthetic,9,9,0,0,26,8
+additional_recharge,Recharge,additional_synthetic,10,10,0,0,25,5
+additional_reward_points,Reward Points,additional_synthetic,11,11,28,0,0,6
+additional_safety_awareness,Safety Awareness,additional_synthetic,2,2,0,0,6,2
+additional_sim_block,Sim Block,additional_synthetic,12,12,30,0,0,6
+additional_statement,Statement,additional_synthetic,18,20,0,0,46,8
+additional_tax_refund,Tax Refund,additional_synthetic,12,12,30,0,0,6
+additional_travel,Travel,additional_synthetic,18,15,0,0,41,8
+additional_upi_refund,Upi Refund,additional_synthetic,12,12,30,0,0,6

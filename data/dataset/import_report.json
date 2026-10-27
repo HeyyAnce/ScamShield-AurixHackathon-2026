@@ -1,0 +1,17 @@
+{
+  "total": 1948,
+  "train": 1662,
+  "added": 1000,
+  "skipped": [],
+  "language": {
+    "en": 982,
+    "hinglish": 766,
+    "hi": 200
+  },
+  "public_review_input": 2267,
+  "public_review_unique": 2053,
+  "inputs_sha256": {
+    "spam_ham_india.csv": "e6a28126d1c4ec9d805a10cd89f2de2bb63650532102e9f35ab05c909c3a79f3",
+    "synthetic_1000.csv": "3bd8931182546e78b31461b51758b28317e3e416ef2ab5a281e6a3b9cd015692"
+  }
+}

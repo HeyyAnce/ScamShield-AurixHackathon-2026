@@ -1,4 +1,4 @@
-﻿message_id,message,label,category,risk_signals,has_link,language,origin,source_id,split
+message_id,message,label,category,risk_signals,has_link,language,origin,source_id,split
 EN-0001,"Axis Bank Notice: Dear user, your CIBIL & Re-KYC status is showing de-active in central server. Call our KYC Verification Officer R. Sharma on +91-9000011223 within 2 hours and share the 6-digit verification code sent to your mobile to avoid account suspension.",SCAM,banking_kyc_account_block,kyc_suspension_threat; otp_solicitation; unverified_callback_number; 2hr_deadline,no,en,synthetic,SYN_A_EN,train
 EN-0002,Bank of Baroda: Dear customer your Bob World app access is terminated today due to non-updation of KYC. Reply with your 12-digit Aadhaar number and Debit Card 4-digit PIN to +91-9000022334 to restore mobile banking.,SCAM,banking_kyc_account_block,kyc_suspension_threat; pin_solicitation; unverified_callback_number,no,en,synthetic,SYN_A_EN,train
 EN-0003,Canara Bank Alert : Your Internet Banking profile requires mandatory annual security synchronization !! Failure to verify via https://canarabank-sync-id.example within 4 hours will result in suspension of IMPS/NEFT/UPI privileges...,SCAM,banking_kyc_account_block,kyc_suspension_threat; unnatural_spacing; repeated_punctuation; lookalike_url,yes,en,synthetic,SYN_A_EN,test
@@ -581,3 +581,403 @@ EN-0579,meet you in corporation st outside gap … you can see how my mind is wo
 EN-0580,the campus bus will leave ten minutes later. Your service team will never ask for an OTP to process this routine update.,SAFE,personal_conversation,,no,en,synthetic,SYN_B_EN,val
 EN-0581,"wow. You're right! I didn't mean to do that. I guess once i gave up on boston men and changed my search location to nyc, something changed. Cuz on my signin page it still says boston.",SAFE,personal_conversation,,no,en,public,SRC_PUB_UCI_SMSSPAM,train
 EN-0582,"your exam timetable is available on the official student portal. If you do not recognize it, contact support through the official app rather than replying here.",SAFE,personal_conversation,,no,en,synthetic,SYN_B_EN,train
+SYN26-GEN0006,Telecom notice: SIM verification failed. Share Aadhaar and OTP at http://telecom-kyc-now83.example/pay or number will be blocked.,SCAM,additional_sim_block,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0007,Refund pending: Rs 499. Scan this QR or enter your UPI PIN at http://refund-upi-claim56.example/claim to receive money.,SCAM,additional_upi_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0010,"Use OTP 319964 to complete your payment of Rs 15,490. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0014,"Crypto doubling scheme: invest Rs 9,999, get double in 7 days. Risk free. Join http://vip-stock-tips67.example/login",SCAM,additional_investment,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0015,"Crypto doubling scheme: invest Rs 15,490, get double in 7 days. Risk free. Join http://vip-stock-tips37.example/pay",SCAM,additional_investment,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0016,"Rs 2,999 debited from A/c XX1234 on 30 Oct. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0018,Your order was delivered at 4:15 PM. Rate your experience in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0019,"Part-time job offer! Salary Rs 30,000 per month. Pay Rs 15,490 security deposit to confirm joining. WhatsApp 98XXXXXX45.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0020,"Reward points about to expire. Claim Rs 49,999 cashback within 2 hours: http://reward-points-redeem21.example/claim",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0022,Your refund of Rs 499 is ready. Approve the UPI request to receive the amount. Valid today.,SCAM,additional_upi_refund,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0023,"Your insurance policy will lapse today. Pay premium Rs 25,000 at http://policy-bonus-claim6.example/login to stay covered.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0026,"Your electricity bill of Rs 4,999 is due on 5 Nov. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0035,Your PAN is not linked with Aadhaar. Account will be frozen today. Update at http://pan-link-update63.example/verify,SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0038,"Dear consumer, last month bill not updated. Power will be cut within 2 hours. Contact officer 98XXXXXX64.",SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0041,"Rs 2,999 debited from A/c XX3456 on 5 Nov. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0042,"Rs 4,999 credited to A/c XX3456 on 5 Nov. Available balance Rs 7,310.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0046,"Join our VIP stock tips group. Guaranteed 30% returns in 10 days. Limited seats, deposit Rs 25,000 today.",SCAM,additional_investment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0049,Your parcel is held at the warehouse. Pay Rs 99 redelivery fee in 24 hours: http://address-update-courier50.example/pay,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0050,Pre-approved loan! Pay Rs 499 insurance fee first. Offer ends in 24 hours.,SCAM,additional_loan_app,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0052,Telecom notice: SIM verification failed. Share Aadhaar and OTP at http://sim-verify-fast91.example/login or number will be blocked.,SCAM,additional_sim_block,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0053,"Policy bonus Rs 49,999 waiting. Share bank details at http://policy-renew-today19.example/pay to receive.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0056,"Your FASTag is blocked due to low balance. Recharge Rs 15,490 now: http://fastag-recharge-help86.example/verify",SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0058,"Hi, are we still meeting at 10:00 AM for the project discussion?",SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0061,"Dear consumer, last month bill not updated. Power will be cut before midnight. Contact officer 98XXXXXX45.",SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0063,FASTag KYC pending. Update within 2 hours or tag will be deactivated: http://fastag-kyc-update91.example/login,SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0064,"Your electricity bill of Rs 9,999 is due on 26 Oct. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0065,"Your insurance policy will lapse before midnight. Pay premium Rs 9,999 at http://policy-bonus-claim19.example/pay to stay covered.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0066,ALERT: KYC not updated. Your account will be suspended today. Verify here: http://bank-verify-now32.example/pay,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0069,"Salary credit of Rs 499 received in A/c XX9012. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0071,"Salary credit of Rs 2,999 received in A/c XX3456. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0074,"Your EMI of Rs 4,999 will be debited on 25 Oct. Please keep sufficient balance.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0076,"Your cab is arriving in 3 minutes. Driver: Ramesh, KA01XX3456.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0078,"Reminder: your broadband bill of Rs 4,999 is due on 26 Oct. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0082,"Your vehicle has a pending e-challan of Rs 25,000. Pay by 6 PM today to avoid court notice: http://traffic-fine-pay25.example/claim",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0085,Your class is rescheduled to 25 Oct at 10:00 AM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0088,470937 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0090,"Never share your OTP, PIN or password with anyone, including bank staff.",SAFE,additional_safety_awareness,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0091,Your account details were updated successfully on 26 Oct. No action required.,SAFE,additional_kyc_confirmation,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0093,"Your EMI of Rs 49,999 will be debited on 25 Oct. Please keep sufficient balance.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0094,Your PAN is not linked with Aadhaar. Account will be frozen by 6 PM today. Update at http://aadhaar-verify-now80.example/update,SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0097,"Your vehicle has a pending e-challan of Rs 1,500. Pay before midnight to avoid court notice: http://echallan-pay-now70.example/claim",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0100,"Hello, wrong transfer of Rs 2,999 to you. Please share the OTP you got so I can reverse it.",SCAM,additional_otp_by_mistake,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0103,"Hi, are we still meeting at 6:45 PM for the project discussion?",SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0104,"Rs 25,000 debited from your account. If not you, call 98XXXXXX83 immediately and share the OTP to cancel.",SCAM,additional_fake_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0108,Your parcel is held at the warehouse. Pay Rs 99 redelivery fee in 24 hours: http://track-parcel-pay46.example/update,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0113,"Your cab is arriving in 3 minutes. Driver: Meena, KA01XX3456.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0116,Your KYC has expired. Submit your details and OTP at http://kyc-update-secure13.example/pay or your account will be frozen tonight at 9:30 PM.,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0118,Track your order: https://shop-track.example/orders/596634,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0124,Track your order: https://shop-track.example/orders/515192,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0126,"Rs 1,500 credited to A/c XX9012 on 2 Nov. Available balance Rs 2,145.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0127,CBI notice: your Aadhaar is linked to money laundering. Join the video call now or arrest warrant will be issued before midnight.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0135,"Reward points about to expire. Claim Rs 2,999 cashback tonight at 9:30 PM: http://cashback-claim-now93.example/verify",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0137,"Use OTP 591945 to complete your payment of Rs 25,000. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0139,"Rs 49,999 credited to A/c XX1234 on 30 Oct. Available balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0140,Your gas cylinder booking is confirmed and will be delivered within 2 days.,SAFE,additional_delivery_done,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0142,Aadhaar verification pending. Click http://aadhaar-verify-now52.example/login and enter OTP to avoid penalty of Rs 499.,SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0144,"Refund pending: Rs 1,500. Scan this QR or enter your UPI PIN at http://upi-refund-center34.example/claim to receive money.",SCAM,additional_upi_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0145,"You have been selected for a Rs 5,00,000 prize. Send Rs 2,999 fee before midnight to receive it. Call 98XXXXXX97.",SCAM,additional_lottery_prize,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0147,Happy birthday Amit! Party kab de raha hai?,SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0151,Your electricity connection will be disconnected in 24 hours due to unpaid bill. Call 98XXXXXX64 immediately.,SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0153,"Crypto doubling scheme: invest Rs 499, get double in 7 days. Risk free. Join http://crypto-double-join89.example/login",SCAM,additional_investment,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0157,"Rs 499 debited from A/c XX3456 on 25 Oct. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0159,Telecom notice: SIM verification failed. Share Aadhaar and OTP at http://sim-verify-fast51.example/claim or number will be blocked.,SCAM,additional_sim_block,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0161,Unauthorised transaction of Rs 999 detected. Verify now at http://verify-transaction-now89.example/pay to stop it.,SCAM,additional_fake_debit_alert,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0162,Reminder: Your appointment with Dr. Amit is on 30 Oct at 10:00 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0167,"Part-time job offer! Salary Rs 30,000 per month. Pay Rs 25,000 security deposit to confirm joining. WhatsApp 98XXXXXX53.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0169,Your e-receipt is available at https://receipts.example/r/893117. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0171,Your parcel is held at the warehouse. Pay Rs 29 redelivery fee before midnight: http://track-parcel-pay96.example/verify,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0174,"Dear customer, your bank account will be blocked tonight at 9:30 PM due to pending KYC. Update now: http://kyc-update-secure83.example/verify",SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0175,Your PAN is not linked with Aadhaar. Account will be frozen in 24 hours. Update at http://aadhaar-verify-now45.example/login,SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0177,Track your order: https://shop-track.example/orders/540599,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0178,"Your train PNR 12382993 is confirmed. Coach B2, seat 34. Departure 11:30 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0180,165960 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0181,Your credit card reward points worth Rs 499 will expire before midnight. Redeem now: http://cashback-claim-now91.example/verify,SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0191,"Use OTP 932847 to complete your payment of Rs 15,490. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0194,Your class is rescheduled to 30 Oct at 6:45 PM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0195,"Use OTP 325076 to complete your payment of Rs 1,500. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0196,Your class is rescheduled to 25 Oct at 4:15 PM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0200,Your SIM will be deactivated within 2 hours due to incomplete verification. Call 98XXXXXX48 now.,SCAM,additional_sim_block,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0201,"Your FASTag is blocked due to low balance. Recharge Rs 49,999 now: http://fastag-recharge-help44.example/login",SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0202,Delivery failed: address incomplete. Update address and pay Rs 49 at http://address-update-courier96.example/pay or the parcel will be returned.,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0203,"Salary credit of Rs 499 received in A/c XX3456. Balance Rs 18,420.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0205,Your e-receipt is available at https://receipts.example/r/665169. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0207,"Join our VIP stock tips group. Guaranteed 30% returns in 10 days. Limited seats, deposit Rs 499 today.",SCAM,additional_investment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0210,Unauthorised transaction of Rs 999 detected. Verify now at http://verify-transaction-now49.example/claim to stop it.,SCAM,additional_fake_debit_alert,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0213,"Income Tax Dept: You are eligible for a refund of Rs 1,500. Submit bank details here: http://it-refund-portal89.example/update",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0215,Happy birthday Sunita! Party kab de raha hai?,SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0216,"Your credit card statement for October is ready. Minimum due Rs 2,999, due date 5 Nov.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0218,Your mobile recharge of Rs 499 was successful. Validity 28 days.,SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0219,"Salary credit of Rs 49,999 received in A/c XX5678. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0220,Track your order: https://shop-track.example/orders/643664,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0221,Delivery failed: address incomplete. Update address and pay Rs 49 at http://track-parcel-pay48.example/claim or the parcel will be returned.,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0224,Reminder: Your appointment with Dr. Amit is on 25 Oct at 10:00 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0226,"Your electricity bill of Rs 49,999 is due on 30 Oct. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0232,"Your credit card statement for October is ready. Minimum due Rs 9,999, due date 5 Nov.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0238,FASTag KYC pending. Update today or tag will be deactivated: http://fastag-kyc-update14.example/claim,SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0241,ALERT: KYC not updated. Your account will be suspended tonight at 9:30 PM. Verify here: http://kyc-update-secure34.example/login,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0242,This is Cyber Crime Branch. A parcel in your name has illegal items. You are under digital arrest. Stay on this video call and tell no one.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0244,"Work from home, earn Rs 4,999 daily by liking videos. Join our Telegram group and pay registration fee Rs 999.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0246,"Congratulations! You won Rs 50,00,000 in the Lucky Draw. Pay Rs 15,490 processing fee to claim: http://lucky-draw-winner25.example/pay",SCAM,additional_lottery_prize,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0250,Delivery failed: address incomplete. Update address and pay Rs 49 at http://track-parcel-pay35.example/update or the parcel will be returned.,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0255,"Work from home, earn Rs 499 daily by liking videos. Join our Telegram group and pay registration fee Rs 999.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0256,"Your insurance policy will lapse by 6 PM today. Pay premium Rs 1,500 at http://policy-bonus-claim25.example/login to stay covered.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0258,"Income Tax Dept: You are eligible for a refund of Rs 4,999. Submit bank details here: http://tax-refund-claim12.example/claim",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0260,"Aadhaar verification pending. Click http://aadhaar-verify-now49.example/update and enter OTP to avoid penalty of Rs 1,500.",SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0261,"Use OTP 476979 to complete your payment of Rs 4,999. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0262,"Aadhaar verification pending. Click http://aadhaar-verify-now35.example/login and enter OTP to avoid penalty of Rs 4,999.",SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0263,"Your FASTag is blocked due to low balance. Recharge Rs 4,999 now: http://fastag-kyc-update45.example/claim",SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0267,"Your insurance policy will lapse in 24 hours. Pay premium Rs 49,999 at http://policy-renew-today57.example/claim to stay covered.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0273,Your class is rescheduled to 30 Oct at 11:30 AM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0275,"Work from home, earn Rs 1,500 daily by liking videos. Join our Telegram group and pay registration fee Rs 999.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0280,"Tax refund Rs 49,999 approved. Confirm account number and OTP by 6 PM today: http://it-refund-portal27.example/update",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0281,"Use OTP 821757 to complete your payment of Rs 15,490. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0285,"Salary credit of Rs 15,490 received in A/c XX9012. Balance Rs 7,310.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0286,"Your mobile recharge of Rs 49,999 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0290,Your electricity connection will be disconnected by 6 PM today due to unpaid bill. Call 98XXXXXX45 immediately.,SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0292,"You have been selected for a Rs 10,00,000 prize. Send Rs 9,999 fee in 24 hours to receive it. Call 98XXXXXX58.",SCAM,additional_lottery_prize,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0293,"Your EMI of Rs 25,000 will be debited on 25 Oct. Please keep sufficient balance.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0294,"Traffic violation fine Rs 25,000. Pay now at http://echallan-pay-now92.example/verify or licence will be suspended.",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0295,"Instant loan up to Rs 50,000 approved without documents. Install this app and pay Rs 499 processing charge: http://easy-loan-now62.example/pay",SCAM,additional_loan_app,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0296,Pre-approved loan! Pay Rs 999 insurance fee first. Offer ends tonight at 9:30 PM.,SCAM,additional_loan_app,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0297,"Policy bonus Rs 25,000 waiting. Share bank details at http://policy-renew-today61.example/pay to receive.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0299,"Your cab is arriving in 3 minutes. Driver: Amit, KA01XX5678.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0301,ALERT: KYC not updated. Your account will be suspended today. Verify here: http://bank-verify-now81.example/pay,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0302,"Rs 4,999 debited from A/c XX9012 on 5 Nov. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0303,"Your cab is arriving in 3 minutes. Driver: Ramesh, KA01XX5678.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0307,Reminder: your broadband bill of Rs 499 is due on 2 Nov. Auto-pay is on.,SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0314,"Dear customer, your bank account will be blocked by 6 PM today due to pending KYC. Update now: http://kyc-update-secure90.example/pay",SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0315,Your order #A563433 has been shipped and will arrive by 25 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0318,Reminder: Your appointment with Dr. Farhan is on 5 Nov at 10:00 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0319,Your account details were updated successfully on 5 Nov. No action required.,SAFE,additional_kyc_confirmation,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0321,"Your mobile recharge of Rs 25,000 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0322,"Your cab is arriving in 3 minutes. Driver: Farhan, KA01XX5678.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0324,"Your credit card statement for October is ready. Minimum due Rs 1,500, due date 2 Nov.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0326,Your SIM will be deactivated by 6 PM today due to incomplete verification. Call 98XXXXXX15 now.,SCAM,additional_sim_block,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0330,Your SIM will be deactivated by 6 PM today due to incomplete verification. Call 98XXXXXX25 now.,SCAM,additional_sim_block,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0331,Your e-receipt is available at https://receipts.example/r/817860. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0335,"Sorry, I sent my OTP to your number by mistake. Please send me the 6-digit code you just received.",SCAM,additional_otp_by_mistake,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0336,"Your train PNR 12586745 is confirmed. Coach B2, seat 34. Departure 11:30 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0337,Your parcel is held at the warehouse. Pay Rs 149 redelivery fee in 24 hours: http://address-update-courier81.example/verify,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0340,Your package was delivered to the front desk at 4:15 PM.,SAFE,additional_delivery_done,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0341,"Your EMI of Rs 1,500 will be debited on 30 Oct. Please keep sufficient balance.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0343,"Your train PNR 12641509 is confirmed. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0345,Your class is rescheduled to 5 Nov at 10:00 AM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0346,Your class is rescheduled to 26 Oct at 11:30 AM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0350,Your electricity bill of Rs 499 is due on 26 Oct. Pay through the official app or website to avoid late fee.,SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0351,"Instant loan up to Rs 50,000 approved without documents. Install this app and pay Rs 4,999 processing charge: http://easy-loan-now63.example/pay",SCAM,additional_loan_app,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0352,"Rs 4,999 debited from A/c XX3456 on 2 Nov. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0361,"Your credit card statement for October is ready. Minimum due Rs 49,999, due date 26 Oct.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0364,"Congratulations! You won Rs 50,00,000 in the Lucky Draw. Pay Rs 25,000 processing fee to claim: http://claim-prize-india82.example/verify",SCAM,additional_lottery_prize,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0365,"Refund pending: Rs 15,490. Scan this QR or enter your UPI PIN at http://upi-refund-center12.example/login to receive money.",SCAM,additional_upi_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0366,"UPI: Rs 2,999 paid to merchant from A/c XX9012 on 5 Nov. Balance Rs 52,880.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0372,"Rs 499 debited from A/c XX1234 on 26 Oct. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0373,Your order #A246688 has been shipped and will arrive by 25 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0375,"Income Tax Dept: You are eligible for a refund of Rs 49,999. Submit bank details here: http://it-refund-portal27.example/claim",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0379,"Join our VIP stock tips group. Guaranteed 30% returns in 10 days. Limited seats, deposit Rs 49,999 today.",SCAM,additional_investment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0381,"Refund pending: Rs 2,999. Scan this QR or enter your UPI PIN at http://upi-refund-center40.example/login to receive money.",SCAM,additional_upi_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0392,"Pre-approved loan! Pay Rs 2,999 insurance fee first. Offer ends tonight at 9:30 PM.",SCAM,additional_loan_app,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0394,Your class is rescheduled to 26 Oct at 6:45 PM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0395,"Your train PNR 12860120 is confirmed. Coach B2, seat 34. Departure 6:45 PM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0396,886509 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0397,Your class is rescheduled to 2 Nov at 10:00 AM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0398,"Salary credit of Rs 4,999 received in A/c XX5678. Balance Rs 7,310.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0402,159503 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0404,"Part-time job offer! Salary Rs 30,000 per month. Pay Rs 1,500 security deposit to confirm joining. WhatsApp 98XXXXXX88.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0405,"Your vehicle has a pending e-challan of Rs 49,999. Pay within 2 hours to avoid court notice: http://traffic-fine-pay47.example/login",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0407,CBI notice: your Aadhaar is linked to money laundering. Join the video call now or arrest warrant will be issued in 24 hours.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0411,"Use OTP 659590 to complete your payment of Rs 49,999. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0412,Your electricity connection will be disconnected before midnight due to unpaid bill. Call 98XXXXXX33 immediately.,SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0414,Refund pending: Rs 499. Scan this QR or enter your UPI PIN at http://upi-refund-center96.example/update to receive money.,SCAM,additional_upi_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0415,"Congratulations! You won Rs 50,00,000 in the Lucky Draw. Pay Rs 2,999 processing fee to claim: http://claim-prize-india18.example/login",SCAM,additional_lottery_prize,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0421,Your e-receipt is available at https://receipts.example/r/136793. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0423,Your PAN is not linked with Aadhaar. Account will be frozen today. Update at http://aadhaar-verify-now12.example/login,SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0426,"Instant loan up to Rs 50,000 approved without documents. Install this app and pay Rs 9,999 processing charge: http://loan-instant-apply71.example/verify",SCAM,additional_loan_app,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0430,"Aadhaar verification pending. Click http://pan-link-update58.example/pay and enter OTP to avoid penalty of Rs 1,500.",SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0431,Reminder: Your appointment with Dr. Meena is on 2 Nov at 6:45 PM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0432,"Policy bonus Rs 9,999 waiting. Share bank details at http://policy-bonus-claim79.example/pay to receive.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0435,Happy birthday Farhan! Party kab de raha hai?,SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0438,"Instant loan up to Rs 50,000 approved without documents. Install this app and pay Rs 4,999 processing charge: http://easy-loan-now26.example/claim",SCAM,additional_loan_app,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0439,"Unauthorised transaction of Rs 2,999 detected. Verify now at http://verify-transaction-now12.example/claim to stop it.",SCAM,additional_fake_debit_alert,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0440,"Your credit card statement for October is ready. Minimum due Rs 49,999, due date 5 Nov.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0441,Track your order: https://shop-track.example/orders/699246,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0446,"Your cab is arriving in 3 minutes. Driver: Sunita, KA01XX3456.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0447,"You have been selected for a Rs 50,00,000 prize. Send Rs 15,490 fee tonight at 9:30 PM to receive it. Call 98XXXXXX65.",SCAM,additional_lottery_prize,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0449,"Work from home, earn Rs 9,999 daily by liking videos. Join our Telegram group and pay registration fee Rs 999.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0450,"Rs 2,999 debited from A/c XX9012 on 25 Oct. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0453,"Part-time job offer! Salary Rs 30,000 per month. Pay Rs 49,999 security deposit to confirm joining. WhatsApp 98XXXXXX45.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0455,"Your credit card statement for October is ready. Minimum due Rs 1,500, due date 25 Oct.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0456,"Your electricity bill of Rs 49,999 is due on 26 Oct. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0458,Your account details were updated successfully on 25 Oct. No action required.,SAFE,additional_kyc_confirmation,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0460,"Rs 999 credited to A/c XX1234 on 5 Nov. Available balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0461,Your order was delivered at 6:45 PM. Rate your experience in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0464,"UPI: Rs 1,500 paid to merchant from A/c XX9012 on 26 Oct. Balance Rs 7,310.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0470,"Pre-approved loan! Pay Rs 2,999 insurance fee first. Offer ends before midnight.",SCAM,additional_loan_app,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0471,"Your train PNR 12567082 is confirmed. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0472,"Your vehicle has a pending e-challan of Rs 25,000. Pay tonight at 9:30 PM to avoid court notice: http://traffic-fine-pay62.example/login",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0473,"UPI: Rs 4,999 paid to merchant from A/c XX9012 on 5 Nov. Balance Rs 18,420.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0482,Your SIM will be deactivated within 2 hours due to incomplete verification. Call 98XXXXXX69 now.,SCAM,additional_sim_block,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0483,219719 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0485,"Your credit card reward points worth Rs 4,999 will expire tonight at 9:30 PM. Redeem now: http://reward-points-redeem2.example/update",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0486,Your order #A989459 has been shipped and will arrive by 25 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0487,Happy birthday Meena! Party kab de raha hai?,SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0489,Fraud alert: we never ask for your OTP or card details over call or SMS. Report suspicious messages to 1930.,SAFE,additional_safety_awareness,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0491,"Dear consumer, last month bill not updated. Power will be cut tonight at 9:30 PM. Contact officer 98XXXXXX53.",SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0493,Telecom notice: SIM verification failed. Share Aadhaar and OTP at http://sim-verify-fast23.example/verify or number will be blocked.,SCAM,additional_sim_block,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0496,"Congratulations! You won Rs 5,00,000 in the Lucky Draw. Pay Rs 49,999 processing fee to claim: http://claim-prize-india69.example/login",SCAM,additional_lottery_prize,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0498,"Your refund of Rs 4,999 is ready. Approve the UPI request to receive the amount. Valid in 24 hours.",SCAM,additional_upi_refund,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0500,Your mobile recharge of Rs 999 was successful. Validity 28 days.,SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0502,Your parcel is held at the warehouse. Pay Rs 75 redelivery fee within 2 hours: http://track-parcel-pay26.example/claim,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0504,Your KYC has expired. Submit your details and OTP at http://kyc-update-secure28.example/pay or your account will be frozen today.,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0505,"You have been selected for a Rs 25,00,000 prize. Send Rs 49,999 fee today to receive it. Call 98XXXXXX53.",SCAM,additional_lottery_prize,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0507,"Dear customer, your bank account will be blocked tonight at 9:30 PM due to pending KYC. Update now: http://kyc-update-secure12.example/update",SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0509,ALERT: KYC not updated. Your account will be suspended before midnight. Verify here: http://kyc-update-secure24.example/claim,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0510,Your KYC has expired. Submit your details and OTP at http://bank-verify-now77.example/update or your account will be frozen tonight at 9:30 PM.,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0512,FASTag KYC pending. Update within 2 hours or tag will be deactivated: http://fastag-kyc-update83.example/pay,SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0516,"Your credit card reward points worth Rs 4,999 will expire within 2 hours. Redeem now: http://cashback-claim-now41.example/update",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0519,Your package was delivered to the front desk at 11:30 AM.,SAFE,additional_delivery_done,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0520,CBI notice: your Aadhaar is linked to money laundering. Join the video call now or arrest warrant will be issued today.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0524,Reminder: Your appointment with Dr. Meena is on 30 Oct at 10:00 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0525,Your order was delivered at 11:30 AM. Rate your experience in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0529,CBI notice: your Aadhaar is linked to money laundering. Join the video call now or arrest warrant will be issued tonight at 9:30 PM.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0530,"Dear consumer, last month bill not updated. Power will be cut before midnight. Contact officer 98XXXXXX48.",SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0532,"Traffic violation fine Rs 1,500. Pay now at http://traffic-fine-pay36.example/update or licence will be suspended.",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0533,Reminder: Your appointment with Dr. Sunita is on 5 Nov at 10:00 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0534,"Your mobile recharge of Rs 15,490 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0535,"Traffic violation fine Rs 2,999. Pay now at http://traffic-fine-pay25.example/claim or licence will be suspended.",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0537,"Use OTP 348592 to complete your payment of Rs 1,500. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0538,"Your vehicle has a pending e-challan of Rs 15,490. Pay before midnight to avoid court notice: http://traffic-fine-pay20.example/login",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0539,Your order #A485363 has been shipped and will arrive by 30 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0542,Your e-receipt is available at https://receipts.example/r/617824. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0543,"Your EMI of Rs 49,999 will be debited on 26 Oct. Please keep sufficient balance.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0548,"Tax refund Rs 49,999 approved. Confirm account number and OTP tonight at 9:30 PM: http://tax-refund-claim22.example/update",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0553,CBI notice: your Aadhaar is linked to money laundering. Join the video call now or arrest warrant will be issued within 2 hours.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0561,"Instant loan up to Rs 50,000 approved without documents. Install this app and pay Rs 499 processing charge: http://easy-loan-now40.example/verify",SCAM,additional_loan_app,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0566,"UPI: Rs 25,000 paid to merchant from A/c XX9012 on 5 Nov. Balance Rs 52,880.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0570,"Reminder: your broadband bill of Rs 49,999 is due on 30 Oct. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0571,"Rs 1,500 credited to A/c XX1234 on 30 Oct. Available balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0573,Your order #A410527 has been shipped and will arrive by 26 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0577,"UPI: Rs 4,999 paid to merchant from A/c XX5678 on 2 Nov. Balance Rs 18,420.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0579,"Crypto doubling scheme: invest Rs 25,000, get double in 7 days. Risk free. Join http://vip-stock-tips54.example/verify",SCAM,additional_investment,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0584,Track your order: https://shop-track.example/orders/922468,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0587,"Crypto doubling scheme: invest Rs 15,490, get double in 7 days. Risk free. Join http://crypto-double-join57.example/pay",SCAM,additional_investment,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0589,886794 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0590,Your class is rescheduled to 5 Nov at 6:45 PM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0591,318756 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0592,"Pre-approved loan! Pay Rs 1,500 insurance fee first. Offer ends tonight at 9:30 PM.",SCAM,additional_loan_app,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0595,"Your FASTag is blocked due to low balance. Recharge Rs 15,490 now: http://fastag-recharge-help94.example/claim",SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0596,"Your electricity bill of Rs 2,999 is due on 5 Nov. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0599,Your refund of Rs 999 is ready. Approve the UPI request to receive the amount. Valid in 24 hours.,SCAM,additional_upi_refund,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0612,"Tax refund Rs 25,000 approved. Confirm account number and OTP by 6 PM today: http://it-refund-portal85.example/login",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0613,"Rs 25,000 debited from your account. If not you, call 98XXXXXX60 immediately and share the OTP to cancel.",SCAM,additional_fake_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0615,"UPI: Rs 9,999 paid to merchant from A/c XX9012 on 30 Oct. Balance Rs 7,310.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0616,"Your cab is arriving in 3 minutes. Driver: Meena, KA01XX1234.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0620,"Rs 9,999 debited from your account. If not you, call 98XXXXXX73 immediately and share the OTP to cancel.",SCAM,additional_fake_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0622,"Your mobile recharge of Rs 1,500 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0628,"Pre-approved loan! Pay Rs 2,999 insurance fee first. Offer ends within 2 hours.",SCAM,additional_loan_app,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0631,"Tax refund Rs 49,999 approved. Confirm account number and OTP by 6 PM today: http://tax-refund-claim50.example/update",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0633,"Your mobile recharge of Rs 4,999 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0634,"You have been selected for a Rs 25,00,000 prize. Send Rs 25,000 fee before midnight to receive it. Call 98XXXXXX95.",SCAM,additional_lottery_prize,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0635,"Reminder: your broadband bill of Rs 49,999 is due on 2 Nov. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0638,"Work from home, earn Rs 2,999 daily by liking videos. Join our Telegram group and pay registration fee Rs 999.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0639,"Congratulations! You won Rs 25,00,000 in the Lucky Draw. Pay Rs 25,000 processing fee to claim: http://claim-prize-india4.example/login",SCAM,additional_lottery_prize,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0641,Your KYC is complete. No further action needed.,SAFE,additional_kyc_confirmation,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0643,Your insurance policy will lapse today. Pay premium Rs 499 at http://policy-renew-today71.example/verify to stay covered.,SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0645,"Your EMI of Rs 49,999 will be debited on 30 Oct. Please keep sufficient balance.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0647,Telecom notice: SIM verification failed. Share Aadhaar and OTP at http://sim-verify-fast32.example/login or number will be blocked.,SCAM,additional_sim_block,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0649,Your EMI of Rs 499 will be debited on 30 Oct. Please keep sufficient balance.,SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0652,Your SIM will be deactivated in 24 hours due to incomplete verification. Call 98XXXXXX73 now.,SCAM,additional_sim_block,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0653,Your package was delivered to the front desk at 10:00 AM.,SAFE,additional_delivery_done,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0656,"Rs 9,999 credited to A/c XX3456 on 2 Nov. Available balance Rs 2,145.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0659,Your order #A721469 has been shipped and will arrive by 25 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0661,"Part-time job offer! Salary Rs 30,000 per month. Pay Rs 25,000 security deposit to confirm joining. WhatsApp 98XXXXXX84.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0667,Traffic violation fine Rs 499. Pay now at http://traffic-fine-pay40.example/verify or licence will be suspended.,SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0670,Your package was delivered to the front desk at 6:45 PM.,SAFE,additional_delivery_done,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0677,"Congratulations! You won Rs 5,00,000 in the Lucky Draw. Pay Rs 9,999 processing fee to claim: http://lucky-draw-winner94.example/verify",SCAM,additional_lottery_prize,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0678,Track your order: https://shop-track.example/orders/386972,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0679,"Your credit card statement for October is ready. Minimum due Rs 15,490, due date 2 Nov.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0682,"Reminder: your broadband bill of Rs 15,490 is due on 25 Oct. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0683,"Dear customer, your bank account will be blocked by 6 PM today due to pending KYC. Update now: http://kyc-update-secure22.example/claim",SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0685,Your e-receipt is available at https://receipts.example/r/827992. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0686,"Reward points about to expire. Claim Rs 2,999 cashback today: http://reward-points-redeem75.example/verify",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0688,"Rs 25,000 credited to A/c XX3456 on 25 Oct. Available balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0689,FASTag KYC pending. Update today or tag will be deactivated: http://fastag-kyc-update13.example/claim,SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0692,Your electricity connection will be disconnected by 6 PM today due to unpaid bill. Call 98XXXXXX48 immediately.,SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0694,"UPI: Rs 49,999 paid to merchant from A/c XX9012 on 25 Oct. Balance Rs 2,145.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0697,"Your refund of Rs 2,999 is ready. Approve the UPI request to receive the amount. Valid in 24 hours.",SCAM,additional_upi_refund,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0701,Reminder: your broadband bill of Rs 999 is due on 26 Oct. Auto-pay is on.,SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0704,FASTag KYC pending. Update today or tag will be deactivated: http://fastag-recharge-help43.example/update,SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0712,"Tax refund Rs 15,490 approved. Confirm account number and OTP today: http://tax-refund-claim22.example/claim",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0713,"Reminder: your broadband bill of Rs 1,500 is due on 30 Oct. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0714,Your account details were updated successfully on 2 Nov. No action required.,SAFE,additional_kyc_confirmation,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0716,"Policy bonus Rs 25,000 waiting. Share bank details at http://policy-renew-today55.example/verify to receive.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0719,Delivery failed: address incomplete. Update address and pay Rs 49 at http://address-update-courier38.example/claim or the parcel will be returned.,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0724,"Rs 9,999 debited from your account. If not you, call 98XXXXXX21 immediately and share the OTP to cancel.",SCAM,additional_fake_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0725,"Crypto doubling scheme: invest Rs 15,490, get double in 7 days. Risk free. Join http://vip-stock-tips17.example/pay",SCAM,additional_investment,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0730,"Your cab is arriving in 3 minutes. Driver: Amit, KA01XX1234.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0731,"Your refund of Rs 49,999 is ready. Approve the UPI request to receive the amount. Valid before midnight.",SCAM,additional_upi_refund,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0732,"Aadhaar verification pending. Click http://pan-link-update94.example/login and enter OTP to avoid penalty of Rs 25,000.",SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0734,"Dear consumer, last month bill not updated. Power will be cut within 2 hours. Contact officer 98XXXXXX63.",SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0737,"Join our VIP stock tips group. Guaranteed 30% returns in 10 days. Limited seats, deposit Rs 999 today.",SCAM,additional_investment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0739,456368 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0741,"Salary credit of Rs 2,999 received in A/c XX3456. Balance Rs 2,145.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0745,Your account details were updated successfully on 30 Oct. No action required.,SAFE,additional_kyc_confirmation,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0747,"Your credit card reward points worth Rs 1,500 will expire tonight at 9:30 PM. Redeem now: http://reward-points-redeem28.example/claim",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0748,"Unauthorised transaction of Rs 49,999 detected. Verify now at http://stop-debit-secure51.example/verify to stop it.",SCAM,additional_fake_debit_alert,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0750,"Hi, are we still meeting at 11:30 AM for the project discussion?",SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0751,"Your cab is arriving in 3 minutes. Driver: Amit, KA01XX9012.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0752,"Your credit card statement for October is ready. Minimum due Rs 2,999, due date 30 Oct.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0757,"Reward points about to expire. Claim Rs 15,490 cashback today: http://cashback-claim-now22.example/pay",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0759,"Your credit card reward points worth Rs 15,490 will expire tonight at 9:30 PM. Redeem now: http://cashback-claim-now66.example/claim",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0764,"Reminder: your broadband bill of Rs 4,999 is due on 25 Oct. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0765,"Reminder: your broadband bill of Rs 49,999 is due on 5 Nov. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0766,"Rs 9,999 debited from A/c XX9012 on 2 Nov. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0770,Reminder: Your appointment with Dr. Amit is on 2 Nov at 6:45 PM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0774,"Salary credit of Rs 4,999 received in A/c XX1234. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0781,"Rs 4,999 credited to A/c XX3456 on 25 Oct. Available balance Rs 18,420.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0782,"Traffic violation fine Rs 49,999. Pay now at http://echallan-pay-now36.example/update or licence will be suspended.",SCAM,additional_e_challan,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0789,"Your train PNR 12435927 is confirmed. Coach B2, seat 34. Departure 6:45 PM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0793,"Dear customer, your bank account will be blocked before midnight due to pending KYC. Update now: http://kyc-update-secure19.example/login",SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0796,"Your mobile recharge of Rs 2,999 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0800,Your EMI of Rs 999 will be debited on 5 Nov. Please keep sufficient balance.,SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0802,"Salary credit of Rs 499 received in A/c XX1234. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0805,Your EMI of Rs 499 will be debited on 5 Nov. Please keep sufficient balance.,SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0806,Your e-receipt is available at https://receipts.example/r/215780. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0813,"UPI: Rs 4,999 paid to merchant from A/c XX3456 on 5 Nov. Balance Rs 2,145.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0816,"Your credit card reward points worth Rs 1,500 will expire in 24 hours. Redeem now: http://cashback-claim-now64.example/update",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0822,"UPI: Rs 999 paid to merchant from A/c XX1234 on 30 Oct. Balance Rs 2,145.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0825,Your class is rescheduled to 2 Nov at 11:30 AM. See you there.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0826,Your order was delivered at 10:00 AM. Rate your experience in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0827,"Your train PNR 12450033 is confirmed. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0829,"Join our VIP stock tips group. Guaranteed 30% returns in 10 days. Limited seats, deposit Rs 2,999 today.",SCAM,additional_investment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0832,Your electricity connection will be disconnected in 24 hours due to unpaid bill. Call 98XXXXXX37 immediately.,SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0833,Your SIM will be deactivated within 2 hours due to incomplete verification. Call 98XXXXXX25 now.,SCAM,additional_sim_block,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0838,"Instant loan up to Rs 50,000 approved without documents. Install this app and pay Rs 15,490 processing charge: http://loan-instant-apply32.example/verify",SCAM,additional_loan_app,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0840,"Rs 9,999 debited from A/c XX3456 on 2 Nov. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0842,"Dear customer, your bank account will be blocked by 6 PM today due to pending KYC. Update now: http://kyc-update-secure82.example/verify",SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0844,Your order #A963575 has been shipped and will arrive by 25 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0846,Your KYC has expired. Submit your details and OTP at http://bank-verify-now28.example/verify or your account will be frozen today.,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0850,"Your train PNR 12381044 is confirmed. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0853,"Your credit card statement for October is ready. Minimum due Rs 499, due date 30 Oct.",SAFE,additional_statement,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0856,Your parcel is held at the warehouse. Pay Rs 99 redelivery fee tonight at 9:30 PM: http://track-parcel-pay95.example/pay,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0857,"Rs 15,490 credited to A/c XX3456 on 25 Oct. Available balance Rs 18,420.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0859,"Use OTP 580551 to complete your payment of Rs 1,500. Never share this code. Valid 5 minutes.",SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0862,"Your train PNR 12779168 is confirmed. Coach B2, seat 34. Departure 10:00 AM.",SAFE,additional_travel,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0864,"Reward points about to expire. Claim Rs 49,999 cashback before midnight: http://cashback-claim-now20.example/update",SCAM,additional_reward_points,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0865,Your order #A776437 has been shipped and will arrive by 2 Nov. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0866,ALERT: KYC not updated. Your account will be suspended by 6 PM today. Verify here: http://bank-verify-now7.example/verify,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0867,"Refund pending: Rs 1,500. Scan this QR or enter your UPI PIN at http://refund-upi-claim81.example/login to receive money.",SCAM,additional_upi_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0868,"Part-time job offer! Salary Rs 30,000 per month. Pay Rs 49,999 security deposit to confirm joining. WhatsApp 98XXXXXX13.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0869,Your KYC has expired. Submit your details and OTP at http://bank-verify-now21.example/update or your account will be frozen within 2 hours.,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0871,Your e-receipt is available at https://receipts.example/r/416456. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0874,Telecom notice: SIM verification failed. Share Aadhaar and OTP at http://sim-verify-fast8.example/pay or number will be blocked.,SCAM,additional_sim_block,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0875,"Your electricity bill of Rs 2,999 is due on 2 Nov. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0877,"Hello, wrong transfer of Rs 25,000 to you. Please share the OTP you got so I can reverse it.",SCAM,additional_otp_by_mistake,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0880,"Join our VIP stock tips group. Guaranteed 30% returns in 10 days. Limited seats, deposit Rs 4,999 today.",SCAM,additional_investment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0881,"Income Tax Dept: You are eligible for a refund of Rs 25,000. Submit bank details here: http://tax-refund-claim80.example/login",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0884,Your order #A362227 has been shipped and will arrive by 25 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0886,Delivery failed: address incomplete. Update address and pay Rs 49 at http://address-update-courier49.example/claim or the parcel will be returned.,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0887,Unauthorised transaction of Rs 999 detected. Verify now at http://stop-debit-secure74.example/login to stop it.,SCAM,additional_fake_debit_alert,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0893,"Tax refund Rs 2,999 approved. Confirm account number and OTP tonight at 9:30 PM: http://it-refund-portal47.example/claim",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0895,ALERT: KYC not updated. Your account will be suspended within 2 hours. Verify here: http://kyc-update-secure14.example/update,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0897,"Policy bonus Rs 49,999 waiting. Share bank details at http://policy-renew-today19.example/verify to receive.",SCAM,additional_insurance_lapse,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0898,"Your electricity bill of Rs 15,490 is due on 30 Oct. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0903,745773 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0905,Your KYC has expired. Submit your details and OTP at http://bank-verify-now54.example/pay or your account will be frozen in 24 hours.,SCAM,additional_fake_kyc,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0912,Your e-receipt is available at https://receipts.example/r/780317. No payment required.,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0914,"UPI: Rs 999 paid to merchant from A/c XX1234 on 25 Oct. Balance Rs 2,145.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0916,"Hello, wrong transfer of Rs 4,999 to you. Please share the OTP you got so I can reverse it.",SCAM,additional_otp_by_mistake,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0921,Track your order: https://shop-track.example/orders/769649,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0923,CBI notice: your Aadhaar is linked to money laundering. Join the video call now or arrest warrant will be issued by 6 PM today.,SCAM,additional_digital_arrest,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0928,"Rs 15,490 credited to A/c XX9012 on 2 Nov. Available balance Rs 7,310.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0930,"Rs 15,490 debited from A/c XX1234 on 2 Nov. If not done by you, call the number on the back of your card.",SAFE,additional_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0932,Your electricity connection will be disconnected within 2 hours due to unpaid bill. Call 98XXXXXX12 immediately.,SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0935,Happy birthday Ramesh! Party kab de raha hai?,SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0937,Reminder: Your appointment with Dr. Sunita is on 2 Nov at 11:30 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0938,Your data pack is 80% used. Recharge from the official app if needed.,SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0939,"Work from home, earn Rs 999 daily by liking videos. Join our Telegram group and pay registration fee Rs 999.",SCAM,additional_fake_job,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0941,195392 is your OTP for login. Do not share it with anyone. Valid for 10 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0942,"You have been selected for a Rs 25,00,000 prize. Send Rs 9,999 fee today to receive it. Call 98XXXXXX40.",SCAM,additional_lottery_prize,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0946,"Hello, wrong transfer of Rs 49,999 to you. Please share the OTP you got so I can reverse it.",SCAM,additional_otp_by_mistake,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0950,Reminder: Your appointment with Dr. Meena is on 26 Oct at 4:15 PM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0951,Use OTP 390624 to complete your payment of Rs 999. Never share this code. Valid 5 minutes.,SAFE,additional_bank_otp,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0953,"Income Tax Dept: You are eligible for a refund of Rs 49,999. Submit bank details here: http://it-refund-portal58.example/verify",SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0954,"Hello, wrong transfer of Rs 15,490 to you. Please share the OTP you got so I can reverse it.",SCAM,additional_otp_by_mistake,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0956,"Rs 1,500 debited from your account. If not you, call 98XXXXXX39 immediately and share the OTP to cancel.",SCAM,additional_fake_debit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0957,Your order #A280438 has been shipped and will arrive by 26 Oct. Track it in the app.,SAFE,additional_order_update,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0960,Delivery failed: address incomplete. Update address and pay Rs 49 at http://track-parcel-pay75.example/claim or the parcel will be returned.,SCAM,additional_courier_fee,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0965,Your electricity bill of Rs 499 is due on 25 Oct. Pay through the official app or website to avoid late fee.,SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0967,"Reminder: your broadband bill of Rs 15,490 is due on 5 Nov. Auto-pay is on.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0968,"Your mobile recharge of Rs 9,999 was successful. Validity 28 days.",SAFE,additional_recharge,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0969,Track your order: https://shop-track.example/orders/820662,SAFE,additional_official_link_genuine,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0973,Reminder: Your appointment with Dr. Ramesh is on 26 Oct at 11:30 AM.,SAFE,additional_appointment,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0975,"Your refund of Rs 1,500 is ready. Approve the UPI request to receive the amount. Valid today.",SCAM,additional_upi_refund,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0983,"Hi, are we still meeting at 4:15 PM for the project discussion?",SAFE,additional_personal_chat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0984,"Your electricity bill of Rs 1,500 is due on 5 Nov. Pay through the official app or website to avoid late fee.",SAFE,additional_bill_reminder,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0987,"Dear consumer, last month bill not updated. Power will be cut within 2 hours. Contact officer 98XXXXXX29.",SCAM,additional_electricity_threat,,no,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0992,Income Tax Dept: You are eligible for a refund of Rs 499. Submit bank details here: http://tax-refund-claim47.example/verify,SCAM,additional_tax_refund,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0994,Your FASTag is blocked due to low balance. Recharge Rs 999 now: http://fastag-recharge-help87.example/pay,SCAM,additional_fastag,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0999,Your PAN is not linked with Aadhaar. Account will be frozen before midnight. Update at http://aadhaar-verify-now49.example/update,SCAM,additional_pan_aadhaar_update,,yes,en,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN1000,"Salary credit of Rs 49,999 received in A/c XX3456. Balance Rs 52,880.",SAFE,additional_credit_alert,,no,en,synthetic,SYN_C_CLAUDE_20261027,train

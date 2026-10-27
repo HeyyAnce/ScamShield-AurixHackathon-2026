@@ -53,8 +53,8 @@ class PipelineTests(TestCase):
 
     def test_dataset_and_split(self):
         self.assertTrue(self.detector.is_dataset_available)
-        self.assertEqual(self.detector.dataset_report.total_records, 948)
-        self.assertEqual(self.detector.matcher.num_docs, 662)
+        self.assertEqual(self.detector.dataset_report.total_records, 1948)
+        self.assertEqual(self.detector.matcher.num_docs, 1662)
         ids = set(self.detector.matcher.train_df.curated_id)
         self.assertFalse(ids & set(self.detector.dataset.df_test.curated_id))
         self.assertFalse(ids & set(self.detector.dataset.df_val.curated_id))

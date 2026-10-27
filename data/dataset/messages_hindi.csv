@@ -1,0 +1,201 @@
+message_id,message,label,category,risk_signals,has_link,language,origin,source_id,split
+SYN26-GEN0003,क्या आज 11:30 AM पर मिलना है? प्रोजेक्ट पर बात करनी है।,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0005,आपका पार्सल 11:30 AM पर रिसेप्शन पर पहुँचा दिया गया।,SAFE,additional_delivery_done,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0011,जन्मदिन मुबारक Amit! पार्टी कब है?,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0021,क्या आज 4:15 PM पर मिलना है? प्रोजेक्ट पर बात करनी है।,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0025,"आपकी बीमा पॉलिसी आज रात 9:30 बजे लैप्स हो जाएगी। प्रीमियम 49,999 रुपये यहाँ भरें: http://policy-bonus-claim27.example/pay",SCAM,additional_insurance_lapse,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0030,"आपके खाते XX5678 में 26 Oct को 9,999 रुपये जमा हुए। शेष राशि 2,145 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0036,फास्टैग केवाईसी बाकी है। अपडेट करें वरना टैग बंद: http://fastag-kyc-update21.example/claim,SCAM,additional_fastag,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0037,"यूपीआई: 9,999 रुपये खाते XX5678 से 26 Oct को चुकाए गए। शेष राशि 2,145 रुपये।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0040,आपका पार्सल 10:00 AM पर रिसेप्शन पर पहुँचा दिया गया।,SAFE,additional_delivery_done,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0045,"क्रिप्टो डबल स्कीम: 15,490 रुपये लगाएं, 7 दिन में दोगुना। पूरी तरह सुरक्षित। जुड़ें: http://crypto-double-join99.example/verify",SCAM,additional_investment,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0048,"हमारे वीआईपी स्टॉक टिप्स ग्रुप से जुड़ें। 10 दिन में 30% गारंटीड रिटर्न। आज 1,500 रुपये जमा करें।",SCAM,additional_investment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0054,याद दिलाना: डॉ. Amit के साथ आपकी अपॉइंटमेंट 26 Oct को 11:30 AM पर है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0055,"यूपीआई: 4,999 रुपये खाते XX3456 से 30 Oct को चुकाए गए। शेष राशि 18,420 रुपये।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0060,"बधाई हो! आपने लकी ड्रॉ में 50,00,000 रुपये जीते हैं। इनाम पाने के लिए 2,999 रुपये शुल्क जमा करें: http://lucky-draw-winner63.example/verify",SCAM,additional_lottery_prize,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0062,"25,000 रुपये के भुगतान के लिए ओटीपी 614037 का उपयोग करें। यह कोड किसी को न बताएं।",SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0073,आपकी कक्षा 26 Oct को 6:45 PM पर पुनर्निर्धारित की गई है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0080,अपना ऑर्डर ट्रैक करें: https://shop-track.example/orders/288552,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0084,"आप 5,00,000 रुपये के इनाम के लिए चुने गए हैं। 15,490 रुपये शुल्क भेजें। कॉल करें: 98XXXXXX62",SCAM,additional_lottery_prize,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0086,"कर रिफंड 49,999 रुपये स्वीकृत। खाता संख्या और ओटीपी की पुष्टि करें: http://it-refund-portal35.example/login",SCAM,additional_tax_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0089,आपका फास्टैग कम बैलेंस के कारण बंद है। अभी 999 रुपये रिचार्ज करें: http://fastag-recharge-help18.example/pay,SCAM,additional_fastag,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0092,"आपकी ट्रेन पीएनआर 12161759 पक्की है। कोच B2, सीट 34। प्रस्थान 4:15 PM।",SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0096,"अनधिकृत लेनदेन 1,500 रुपये का मिला। रोकने के लिए अभी सत्यापित करें: http://stop-debit-secure93.example/pay",SCAM,additional_fake_debit_alert,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0099,आपका फास्टैग कम बैलेंस के कारण बंद है। अभी 499 रुपये रिचार्ज करें: http://fastag-kyc-update25.example/verify,SCAM,additional_fastag,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0109,जन्मदिन मुबारक Meena! पार्टी कब है?,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0110,"आपका ऑर्डर #A984892 भेज दिया गया है, 26 Oct तक पहुँचेगा। ऐप में ट्रैक करें।",SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0119,आपका 499 रुपये का रिफंड तैयार है। यूपीआई रिक्वेस्ट स्वीकार करें। रात 12 बजे से पहले तक मान्य।,SCAM,additional_upi_refund,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0121,"घर बैठे रोज़ 15,490 रुपये कमाएं, वीडियो लाइक करके। टेलीग्राम ग्रुप जॉइन करें, पंजीकरण शुल्क 999 रुपये।",SCAM,additional_fake_job,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0125,"रिफंड बाकी: 9,999 रुपये। पैसे पाने के लिए http://upi-refund-center34.example/claim पर यूपीआई पिन डालें।",SCAM,additional_upi_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0128,"यह साइबर क्राइम ब्रांच है। आपके नाम के पार्सल में अवैध सामान है। आप डिजिटल अरेस्ट में हैं। वीडियो कॉल पर रहें, किसी को न बताएं।",SCAM,additional_digital_arrest,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0131,"रिवॉर्ड पॉइंट्स खत्म होने वाले हैं। 49,999 रुपये कैशबैक पाएं: http://reward-points-redeem18.example/pay",SCAM,additional_reward_points,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0132,आपका डेटा पैक 80% उपयोग हो चुका है। ज़रूरत हो तो आधिकारिक ऐप से रिचार्ज करें।,SAFE,additional_recharge,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0133,"प्रिय उपभोक्ता, पिछले महीने का बिल अपडेट नहीं हुआ। बिजली बंद होगी। संपर्क करें: 98XXXXXX33",SCAM,additional_electricity_threat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0136,"आपकी ट्रेन पीएनआर 12979399 पक्की है। कोच B2, सीट 34। प्रस्थान 6:45 PM।",SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0149,"वेतन 999 रुपये खाते XX5678 में आ गया। शेष 52,880 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0155,"49,999 रुपये के भुगतान के लिए ओटीपी 726948 का उपयोग करें। यह कोड किसी को न बताएं।",SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0160,"1,500 रुपये के भुगतान के लिए ओटीपी 173439 का उपयोग करें। यह कोड किसी को न बताएं।",SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0165,"नमस्ते, गलती से 15,490 रुपये आपको चले गए। वापस करने के लिए जो ओटीपी आया वह बताइए।",SCAM,additional_otp_by_mistake,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0166,"बिजली बिल 4,999 रुपये की अंतिम तिथि 5 Nov है। देर शुल्क से बचने के लिए आधिकारिक ऐप से भुगतान करें।",SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0179,आपका पैन आधार से लिंक नहीं है। खाता फ्रीज़ होगा। अपडेट करें: http://aadhaar-verify-now58.example/claim,SCAM,additional_pan_aadhaar_update,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0184,"हमारे वीआईपी स्टॉक टिप्स ग्रुप से जुड़ें। 10 दिन में 30% गारंटीड रिटर्न। आज 2,999 रुपये जमा करें।",SCAM,additional_investment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0185,गलती से मेरा ओटीपी आपके नंबर पर आ गया है। कृपया 6 अंकों का कोड बताइए।,SCAM,additional_otp_by_mistake,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0186,टेलीकॉम सूचना: सिम सत्यापन विफल। http://sim-verify-fast56.example/update पर आधार और ओटीपी भेजें वरना नंबर बंद।,SCAM,additional_sim_block,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0187,"आपके खाते से 15,490 रुपये कट गए। रद्द करने के लिए 98XXXXXX30 पर कॉल करें और ओटीपी बताएं।",SCAM,additional_fake_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0197,याद दिलाना: डॉ. Meena के साथ आपकी अपॉइंटमेंट 2 Nov को 10:00 AM पर है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0199,बैंक कभी भी आपसे ओटीपी या पिन नहीं मांगता। इसे किसी को न बताएं।,SAFE,additional_safety_awareness,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0204,आपका ओटीपी 412576 है। इसे किसी के साथ साझा न करें। 10 मिनट तक मान्य।,SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0209,सीबीआई नोटिस: आपका आधार मनी लॉन्ड्रिंग से जुड़ा है। अभी वीडियो कॉल जॉइन करें वरना वारंट जारी होगा।,SCAM,additional_digital_arrest,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0211,आपकी कैब 3 मिनट में पहुँच रही है। चालक: Ramesh।,SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0212,"आपकी ईएमआई 49,999 रुपये 30 Oct को कटेगी। कृपया पर्याप्त शेष रखें।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0223,"आपकी बीमा पॉलिसी रात 12 बजे से पहले लैप्स हो जाएगी। प्रीमियम 49,999 रुपये यहाँ भरें: http://policy-renew-today26.example/update",SCAM,additional_insurance_lapse,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0225,"आपके खाते XX1234 में 25 Oct को 25,000 रुपये जमा हुए। शेष राशि 2,145 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0228,"आप 5,00,000 रुपये के इनाम के लिए चुने गए हैं। 4,999 रुपये शुल्क भेजें। कॉल करें: 98XXXXXX74",SCAM,additional_lottery_prize,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0230,"बधाई हो! आपने लकी ड्रॉ में 5,00,000 रुपये जीते हैं। इनाम पाने के लिए 2,999 रुपये शुल्क जमा करें: http://lucky-draw-winner4.example/pay",SCAM,additional_lottery_prize,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0233,आपका ऑर्डर 10:00 AM पर पहुँचा दिया गया। ऐप में रेटिंग दें।,SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0234,"आपका 15,490 रुपये का रिचार्ज सफल रहा। वैधता 28 दिन।",SAFE,additional_recharge,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0248,"आपकी ट्रेन पीएनआर 12776388 पक्की है। कोच B2, सीट 34। प्रस्थान 4:15 PM।",SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0251,याद दिलाना: ब्रॉडबैंड बिल 499 रुपये 5 Nov को देय है। ऑटो-पे चालू है।,SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0253,"आपका 1,500 रुपये का रिचार्ज सफल रहा। वैधता 28 दिन।",SAFE,additional_recharge,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0254,"यूपीआई: 15,490 रुपये खाते XX1234 से 25 Oct को चुकाए गए। शेष राशि 52,880 रुपये।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0259,धोखाधड़ी चेतावनी: हम कॉल या एसएमएस पर ओटीपी या कार्ड विवरण नहीं मांगते। संदिग्ध संदेश 1930 पर बताएं।,SAFE,additional_safety_awareness,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0271,"घर बैठे रोज़ 25,000 रुपये कमाएं, वीडियो लाइक करके। टेलीग्राम ग्रुप जॉइन करें, पंजीकरण शुल्क 999 रुपये।",SCAM,additional_fake_job,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0279,हमारे वीआईपी स्टॉक टिप्स ग्रुप से जुड़ें। 10 दिन में 30% गारंटीड रिटर्न। आज 499 रुपये जमा करें।,SCAM,additional_investment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0304,"आपके वाहन पर 9,999 रुपये का ई-चालान बाकी है। भुगतान करें वरना कोर्ट नोटिस: http://echallan-pay-now49.example/claim",SCAM,additional_e_challan,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0305,"आपका ऑर्डर #A426817 भेज दिया गया है, 2 Nov तक पहुँचेगा। ऐप में ट्रैक करें।",SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0308,फास्टैग केवाईसी बाकी है। अपडेट करें वरना टैग बंद: http://fastag-recharge-help18.example/pay,SCAM,additional_fastag,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0311,आपकी ई-रसीद यहाँ है: https://receipts.example/r/500380। कोई भुगतान नहीं करना।,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0312,सूचना: केवाईसी अपडेट नहीं है। खाता फ्रीज़ हो जाएगा। यहाँ सत्यापित करें: http://bank-verify-now54.example/claim,SCAM,additional_fake_kyc,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0320,अपना ऑर्डर ट्रैक करें: https://shop-track.example/orders/966937,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0328,"कर रिफंड 9,999 रुपये स्वीकृत। खाता संख्या और ओटीपी की पुष्टि करें: http://tax-refund-claim29.example/update",SCAM,additional_tax_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0355,"आपका बैंक खाता 2 घंटे में बंद हो जाएगा, केवाईसी बाकी है। अभी अपडेट करें: http://bank-verify-now43.example/login",SCAM,additional_fake_kyc,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0362,आपकी कैब 3 मिनट में पहुँच रही है। चालक: Meena।,SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0369,"आपका सिम आज रात 9:30 बजे बंद हो जाएगा, सत्यापन अधूरा है। अभी कॉल करें: 98XXXXXX51",SCAM,additional_sim_block,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0371,बिजली बिल 999 रुपये की अंतिम तिथि 2 Nov है। देर शुल्क से बचने के लिए आधिकारिक ऐप से भुगतान करें।,SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0378,"आपका बैंक खाता आज रात 9:30 बजे बंद हो जाएगा, केवाईसी बाकी है। अभी अपडेट करें: http://bank-verify-now90.example/login",SCAM,additional_fake_kyc,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0384,"क्रिप्टो डबल स्कीम: 15,490 रुपये लगाएं, 7 दिन में दोगुना। पूरी तरह सुरक्षित। जुड़ें: http://crypto-double-join94.example/claim",SCAM,additional_investment,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0385,सूचना: केवाईसी अपडेट नहीं है। खाता फ्रीज़ हो जाएगा। यहाँ सत्यापित करें: http://kyc-update-secure66.example/update,SCAM,additional_fake_kyc,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0386,"आपकी बीमा पॉलिसी आज लैप्स हो जाएगी। प्रीमियम 15,490 रुपये यहाँ भरें: http://policy-renew-today22.example/pay",SCAM,additional_insurance_lapse,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0388,टेलीकॉम सूचना: सिम सत्यापन विफल। http://telecom-kyc-now78.example/login पर आधार और ओटीपी भेजें वरना नंबर बंद।,SCAM,additional_sim_block,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0389,"आपके खाते से 15,490 रुपये कट गए। रद्द करने के लिए 98XXXXXX65 पर कॉल करें और ओटीपी बताएं।",SCAM,additional_fake_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0393,आपका पार्सल गोदाम में रुका है। 99 रुपये पुनः वितरण शुल्क अभी भरें: http://track-parcel-pay3.example/verify,SCAM,additional_courier_fee,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0399,"आपका बिजली कनेक्शन आज शाम 6 बजे तक कट जाएगा, बिल बाकी है। तुरंत कॉल करें: 98XXXXXX44",SCAM,additional_electricity_threat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0400,"आपका क्रेडिट कार्ड स्टेटमेंट तैयार है। न्यूनतम देय 49,999 रुपये, अंतिम तिथि 26 Oct।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0408,"आपकी ट्रेन पीएनआर 12233500 पक्की है। कोच B2, सीट 34। प्रस्थान 11:30 AM।",SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0409,"प्रिय उपभोक्ता, पिछले महीने का बिल अपडेट नहीं हुआ। बिजली बंद होगी। संपर्क करें: 98XXXXXX55",SCAM,additional_electricity_threat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0417,"खाते XX1234 से 25 Oct को 2,999 रुपये डेबिट हुए। यदि आपने नहीं किया तो कार्ड के पीछे दिए नंबर पर कॉल करें।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0420,"खाते XX1234 से 5 Nov को 15,490 रुपये डेबिट हुए। यदि आपने नहीं किया तो कार्ड के पीछे दिए नंबर पर कॉल करें।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0424,आपका पार्सल 6:45 PM पर रिसेप्शन पर पहुँचा दिया गया।,SAFE,additional_delivery_done,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0428,रिफंड बाकी: 499 रुपये। पैसे पाने के लिए http://upi-refund-center40.example/login पर यूपीआई पिन डालें।,SCAM,additional_upi_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0436,"पॉलिसी बोनस 25,000 रुपये इंतज़ार में है। बैंक विवरण भेजें: http://policy-bonus-claim73.example/update",SCAM,additional_insurance_lapse,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0443,आपका पार्सल गोदाम में रुका है। 75 रुपये पुनः वितरण शुल्क अभी भरें: http://track-parcel-pay33.example/pay,SCAM,additional_courier_fee,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0445,आपका पैन आधार से लिंक नहीं है। खाता फ्रीज़ होगा। अपडेट करें: http://aadhaar-verify-now52.example/verify,SCAM,additional_pan_aadhaar_update,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0448,आपकी कैब 3 मिनट में पहुँच रही है। चालक: Amit।,SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0459,"आप 10,00,000 रुपये के इनाम के लिए चुने गए हैं। 999 रुपये शुल्क भेजें। कॉल करें: 98XXXXXX63",SCAM,additional_lottery_prize,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0462,"आपके वाहन पर 4,999 रुपये का ई-चालान बाकी है। भुगतान करें वरना कोर्ट नोटिस: http://echallan-pay-now2.example/login",SCAM,additional_e_challan,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0463,"आपके क्रेडिट कार्ड के रिवॉर्ड पॉइंट्स (25,000 रुपये) आज रात 9:30 बजे खत्म हो रहे हैं। अभी रिडीम करें: http://reward-points-redeem94.example/claim",SCAM,additional_reward_points,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0465,"नमस्ते, गलती से 999 रुपये आपको चले गए। वापस करने के लिए जो ओटीपी आया वह बताइए।",SCAM,additional_otp_by_mistake,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0469,क्या आज 6:45 PM पर मिलना है? प्रोजेक्ट पर बात करनी है।,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0478,"खाते XX5678 से 26 Oct को 4,999 रुपये डेबिट हुए। यदि आपने नहीं किया तो कार्ड के पीछे दिए नंबर पर कॉल करें।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0497,"प्रिय उपभोक्ता, पिछले महीने का बिल अपडेट नहीं हुआ। बिजली बंद होगी। संपर्क करें: 98XXXXXX82",SCAM,additional_electricity_threat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0515,"आपके खाते XX9012 में 5 Nov को 25,000 रुपये जमा हुए। शेष राशि 52,880 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0517,फास्टैग केवाईसी बाकी है। अपडेट करें वरना टैग बंद: http://fastag-kyc-update84.example/claim,SCAM,additional_fastag,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0518,आपकी कैब 3 मिनट में पहुँच रही है। चालक: Sunita।,SAFE,additional_travel,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0522,"पार्ट-टाइम जॉब! वेतन 30,000 रुपये महीना। जॉइनिंग के लिए 1,500 रुपये जमा करें। व्हाट्सऐप: 98XXXXXX55",SCAM,additional_fake_job,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0531,"आपका क्रेडिट कार्ड स्टेटमेंट तैयार है। न्यूनतम देय 25,000 रुपये, अंतिम तिथि 25 Oct।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0541,"याद दिलाना: ब्रॉडबैंड बिल 49,999 रुपये 5 Nov को देय है। ऑटो-पे चालू है।",SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0544,"पार्ट-टाइम जॉब! वेतन 30,000 रुपये महीना। जॉइनिंग के लिए 49,999 रुपये जमा करें। व्हाट्सऐप: 98XXXXXX82",SCAM,additional_fake_job,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0546,डिलीवरी विफल: पता अधूरा है। http://address-update-courier11.example/claim पर पता अपडेट करें और 49 रुपये भरें।,SCAM,additional_courier_fee,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0551,"पार्ट-टाइम जॉब! वेतन 30,000 रुपये महीना। जॉइनिंग के लिए 9,999 रुपये जमा करें। व्हाट्सऐप: 98XXXXXX30",SCAM,additional_fake_job,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0557,"आपके खाते XX1234 में 30 Oct को 499 रुपये जमा हुए। शेष राशि 7,310 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0559,"रिवॉर्ड पॉइंट्स खत्म होने वाले हैं। 1,500 रुपये कैशबैक पाएं: http://cashback-claim-now27.example/update",SCAM,additional_reward_points,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0562,जन्मदिन मुबारक Farhan! पार्टी कब है?,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0564,"आपका क्रेडिट कार्ड स्टेटमेंट तैयार है। न्यूनतम देय 49,999 रुपये, अंतिम तिथि 25 Oct।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0572,"कर रिफंड 1,500 रुपये स्वीकृत। खाता संख्या और ओटीपी की पुष्टि करें: http://it-refund-portal49.example/update",SCAM,additional_tax_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0574,"अनधिकृत लेनदेन 15,490 रुपये का मिला। रोकने के लिए अभी सत्यापित करें: http://stop-debit-secure78.example/verify",SCAM,additional_fake_debit_alert,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0575,"याद दिलाना: ब्रॉडबैंड बिल 9,999 रुपये 26 Oct को देय है। ऑटो-पे चालू है।",SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0580,"आपका फास्टैग कम बैलेंस के कारण बंद है। अभी 2,999 रुपये रिचार्ज करें: http://fastag-kyc-update88.example/verify",SCAM,additional_fastag,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0586,"आपके क्रेडिट कार्ड के रिवॉर्ड पॉइंट्स (9,999 रुपये) रात 12 बजे से पहले खत्म हो रहे हैं। अभी रिडीम करें: http://cashback-claim-now90.example/verify",SCAM,additional_reward_points,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0594,"आपकी ईएमआई 15,490 रुपये 30 Oct को कटेगी। कृपया पर्याप्त शेष रखें।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0600,"क्रिप्टो डबल स्कीम: 999 रुपये लगाएं, 7 दिन में दोगुना। पूरी तरह सुरक्षित। जुड़ें: http://crypto-double-join61.example/claim",SCAM,additional_investment,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0608,"आपका ऑर्डर #A855250 भेज दिया गया है, 25 Oct तक पहुँचेगा। ऐप में ट्रैक करें।",SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0609,"आयकर विभाग: आप 1,500 रुपये के रिफंड के पात्र हैं। बैंक विवरण यहाँ भेजें: http://tax-refund-claim45.example/login",SCAM,additional_tax_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0611,आपकी कक्षा 5 Nov को 4:15 PM पर पुनर्निर्धारित की गई है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0623,आपके वाहन पर 999 रुपये का ई-चालान बाकी है। भुगतान करें वरना कोर्ट नोटिस: http://traffic-fine-pay75.example/claim,SCAM,additional_e_challan,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0626,आधार सत्यापन बाकी है। 999 रुपये जुर्माने से बचने के लिए http://pan-link-update6.example/claim पर ओटीपी डालें।,SCAM,additional_pan_aadhaar_update,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0629,पॉलिसी बोनस 499 रुपये इंतज़ार में है। बैंक विवरण भेजें: http://policy-bonus-claim53.example/pay,SCAM,additional_insurance_lapse,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0636,"आपका बिजली कनेक्शन आज रात 9:30 बजे कट जाएगा, बिल बाकी है। तुरंत कॉल करें: 98XXXXXX88",SCAM,additional_electricity_threat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0642,याद दिलाना: डॉ. Farhan के साथ आपकी अपॉइंटमेंट 25 Oct को 10:00 AM पर है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0646,"बधाई हो! आपने लकी ड्रॉ में 25,00,000 रुपये जीते हैं। इनाम पाने के लिए 1,500 रुपये शुल्क जमा करें: http://lucky-draw-winner80.example/pay",SCAM,additional_lottery_prize,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0655,"प्री-अप्रूव्ड लोन! पहले 2,999 रुपये बीमा शुल्क भेजें। ऑफर आज शाम 6 बजे तक खत्म।",SCAM,additional_loan_app,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0660,"बिना दस्तावेज़ 50,000 रुपये तक तुरंत लोन मंज़ूर! ऐप इंस्टॉल करें, प्रोसेसिंग शुल्क 4,999 रुपये: http://loan-instant-apply94.example/pay",SCAM,additional_loan_app,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0662,अपना ऑर्डर ट्रैक करें: https://shop-track.example/orders/439474,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0673,"अनधिकृत लेनदेन 49,999 रुपये का मिला। रोकने के लिए अभी सत्यापित करें: http://verify-transaction-now85.example/verify",SCAM,additional_fake_debit_alert,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0680,"आधार सत्यापन बाकी है। 1,500 रुपये जुर्माने से बचने के लिए http://aadhaar-verify-now64.example/claim पर ओटीपी डालें।",SCAM,additional_pan_aadhaar_update,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0681,आपकी ई-रसीद यहाँ है: https://receipts.example/r/200342। कोई भुगतान नहीं करना।,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0693,"आपके क्रेडिट कार्ड के रिवॉर्ड पॉइंट्स (25,000 रुपये) आज खत्म हो रहे हैं। अभी रिडीम करें: http://cashback-claim-now97.example/update",SCAM,additional_reward_points,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0695,आपका ओटीपी 600537 है। इसे किसी के साथ साझा न करें। 10 मिनट तक मान्य।,SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0698,"आयकर विभाग: आप 49,999 रुपये के रिफंड के पात्र हैं। बैंक विवरण यहाँ भेजें: http://it-refund-portal63.example/claim",SCAM,additional_tax_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0699,क्या आज 10:00 AM पर मिलना है? प्रोजेक्ट पर बात करनी है।,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0702,आपकी कक्षा 25 Oct को 10:00 AM पर पुनर्निर्धारित की गई है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0703,आपका ओटीपी 657467 है। इसे किसी के साथ साझा न करें। 10 मिनट तक मान्य।,SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0707,जन्मदिन मुबारक Sunita! पार्टी कब है?,SAFE,additional_personal_chat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0708,अपना ऑर्डर ट्रैक करें: https://shop-track.example/orders/818964,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0715,"25,000 रुपये के भुगतान के लिए ओटीपी 799729 का उपयोग करें। यह कोड किसी को न बताएं।",SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0733,"आपका 25,000 रुपये का रिचार्ज सफल रहा। वैधता 28 दिन।",SAFE,additional_recharge,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0738,सूचना: केवाईसी अपडेट नहीं है। खाता फ्रीज़ हो जाएगा। यहाँ सत्यापित करें: http://bank-verify-now48.example/claim,SCAM,additional_fake_kyc,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0740,आपका पार्सल 4:15 PM पर रिसेप्शन पर पहुँचा दिया गया।,SAFE,additional_delivery_done,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0743,"नमस्ते, गलती से 49,999 रुपये आपको चले गए। वापस करने के लिए जो ओटीपी आया वह बताइए।",SCAM,additional_otp_by_mistake,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0753,"ट्रैफिक जुर्माना 9,999 रुपये। अभी http://echallan-pay-now11.example/pay पर भरें वरना लाइसेंस निलंबित।",SCAM,additional_e_challan,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0775,आपकी ई-रसीद यहाँ है: https://receipts.example/r/865250। कोई भुगतान नहीं करना।,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0777,"आपकी ईएमआई 25,000 रुपये 25 Oct को कटेगी। कृपया पर्याप्त शेष रखें।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0778,टेलीकॉम सूचना: सिम सत्यापन विफल। http://telecom-kyc-now92.example/verify पर आधार और ओटीपी भेजें वरना नंबर बंद।,SCAM,additional_sim_block,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0779,"आपका बिजली कनेक्शन 24 घंटे में कट जाएगा, बिल बाकी है। तुरंत कॉल करें: 98XXXXXX25",SCAM,additional_electricity_threat,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0780,आपका केवाईसी पूरा हो गया है। आगे कुछ करने की आवश्यकता नहीं।,SAFE,additional_kyc_confirmation,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0783,आपका ऑर्डर 11:30 AM पर पहुँचा दिया गया। ऐप में रेटिंग दें।,SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0784,"आपका ऑर्डर #A375095 भेज दिया गया है, 30 Oct तक पहुँचेगा। ऐप में ट्रैक करें।",SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0788,बिजली बिल 499 रुपये की अंतिम तिथि 30 Oct है। देर शुल्क से बचने के लिए आधिकारिक ऐप से भुगतान करें।,SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0790,आपका 999 रुपये का रिफंड तैयार है। यूपीआई रिक्वेस्ट स्वीकार करें। रात 12 बजे से पहले तक मान्य।,SCAM,additional_upi_refund,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0795,"वेतन 15,490 रुपये खाते XX5678 में आ गया। शेष 52,880 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0804,आपका ऑर्डर 6:45 PM पर पहुँचा दिया गया। ऐप में रेटिंग दें।,SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0808,आपकी कक्षा 30 Oct को 4:15 PM पर पुनर्निर्धारित की गई है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0809,आपका ओटीपी 535259 है। इसे किसी के साथ साझा न करें। 10 मिनट तक मान्य।,SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0811,"घर बैठे रोज़ 49,999 रुपये कमाएं, वीडियो लाइक करके। टेलीग्राम ग्रुप जॉइन करें, पंजीकरण शुल्क 999 रुपये।",SCAM,additional_fake_job,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0812,पॉलिसी बोनस 999 रुपये इंतज़ार में है। बैंक विवरण भेजें: http://policy-renew-today69.example/verify,SCAM,additional_insurance_lapse,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0818,"आयकर विभाग: आप 1,500 रुपये के रिफंड के पात्र हैं। बैंक विवरण यहाँ भेजें: http://it-refund-portal81.example/update",SCAM,additional_tax_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0819,"बिना दस्तावेज़ 50,000 रुपये तक तुरंत लोन मंज़ूर! ऐप इंस्टॉल करें, प्रोसेसिंग शुल्क 25,000 रुपये: http://loan-instant-apply42.example/update",SCAM,additional_loan_app,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0821,"वेतन 999 रुपये खाते XX1234 में आ गया। शेष 18,420 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0834,रिवॉर्ड पॉइंट्स खत्म होने वाले हैं। 499 रुपये कैशबैक पाएं: http://cashback-claim-now96.example/update,SCAM,additional_reward_points,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0848,आपके खाते का विवरण 5 Nov को अपडेट हो गया है। कोई कार्रवाई आवश्यक नहीं।,SAFE,additional_kyc_confirmation,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0870,"यूपीआई: 49,999 रुपये खाते XX9012 से 25 Oct को चुकाए गए। शेष राशि 52,880 रुपये।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0873,"आपका सिम आज शाम 6 बजे तक बंद हो जाएगा, सत्यापन अधूरा है। अभी कॉल करें: 98XXXXXX67",SCAM,additional_sim_block,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0885,"ट्रैफिक जुर्माना 15,490 रुपये। अभी http://echallan-pay-now97.example/update पर भरें वरना लाइसेंस निलंबित।",SCAM,additional_e_challan,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0889,"ट्रैफिक जुर्माना 1,500 रुपये। अभी http://traffic-fine-pay12.example/pay पर भरें वरना लाइसेंस निलंबित।",SCAM,additional_e_challan,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0890,"खाते XX1234 से 25 Oct को 9,999 रुपये डेबिट हुए। यदि आपने नहीं किया तो कार्ड के पीछे दिए नंबर पर कॉल करें।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0891,आपके खाते का विवरण 26 Oct को अपडेट हो गया है। कोई कार्रवाई आवश्यक नहीं।,SAFE,additional_kyc_confirmation,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0892,"आपका क्रेडिट कार्ड स्टेटमेंट तैयार है। न्यूनतम देय 499 रुपये, अंतिम तिथि 26 Oct।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0894,"बिना दस्तावेज़ 50,000 रुपये तक तुरंत लोन मंज़ूर! ऐप इंस्टॉल करें, प्रोसेसिंग शुल्क 1,500 रुपये: http://loan-instant-apply4.example/verify",SCAM,additional_loan_app,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0900,"प्री-अप्रूव्ड लोन! पहले 15,490 रुपये बीमा शुल्क भेजें। ऑफर 2 घंटे में खत्म।",SCAM,additional_loan_app,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0901,"आपके खाते से 2,999 रुपये कट गए। रद्द करने के लिए 98XXXXXX67 पर कॉल करें और ओटीपी बताएं।",SCAM,additional_fake_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0902,"बिजली बिल 25,000 रुपये की अंतिम तिथि 5 Nov है। देर शुल्क से बचने के लिए आधिकारिक ऐप से भुगतान करें।",SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0907,आपका ऑर्डर 4:15 PM पर पहुँचा दिया गया। ऐप में रेटिंग दें।,SAFE,additional_order_update,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0910,डिलीवरी विफल: पता अधूरा है। http://address-update-courier90.example/verify पर पता अपडेट करें और 49 रुपये भरें।,SCAM,additional_courier_fee,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0911,आपका ओटीपी 769608 है। इसे किसी के साथ साझा न करें। 10 मिनट तक मान्य।,SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0913,आपकी ई-रसीद यहाँ है: https://receipts.example/r/606893। कोई भुगतान नहीं करना।,SAFE,additional_official_link_genuine,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0917,आपके खाते का विवरण 25 Oct को अपडेट हो गया है। कोई कार्रवाई आवश्यक नहीं।,SAFE,additional_kyc_confirmation,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0924,"आपका बैंक खाता आज बंद हो जाएगा, केवाईसी बाकी है। अभी अपडेट करें: http://kyc-update-secure38.example/login",SCAM,additional_fake_kyc,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0926,"4,999 रुपये के भुगतान के लिए ओटीपी 738146 का उपयोग करें। यह कोड किसी को न बताएं।",SAFE,additional_bank_otp,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0959,आपकी गैस सिलेंडर बुकिंग पक्की है। 2 दिन में डिलीवरी होगी।,SAFE,additional_delivery_done,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0962,"प्री-अप्रूव्ड लोन! पहले 9,999 रुपये बीमा शुल्क भेजें। ऑफर रात 12 बजे से पहले खत्म।",SCAM,additional_loan_app,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0963,"आपकी ईएमआई 49,999 रुपये 26 Oct को कटेगी। कृपया पर्याप्त शेष रखें।",SAFE,additional_statement,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0964,"आपका 25,000 रुपये का रिफंड तैयार है। यूपीआई रिक्वेस्ट स्वीकार करें। आज रात 9:30 बजे तक मान्य।",SCAM,additional_upi_refund,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0966,याद दिलाना: ब्रॉडबैंड बिल 499 रुपये 25 Oct को देय है। ऑटो-पे चालू है।,SAFE,additional_bill_reminder,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0970,आपके खाते का विवरण 30 Oct को अपडेट हो गया है। कोई कार्रवाई आवश्यक नहीं।,SAFE,additional_kyc_confirmation,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0976,याद दिलाना: डॉ. Meena के साथ आपकी अपॉइंटमेंट 5 Nov को 10:00 AM पर है।,SAFE,additional_appointment,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0977,डिलीवरी विफल: पता अधूरा है। http://address-update-courier51.example/claim पर पता अपडेट करें और 49 रुपये भरें।,SCAM,additional_courier_fee,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0978,"रिफंड बाकी: 15,490 रुपये। पैसे पाने के लिए http://refund-upi-claim90.example/pay पर यूपीआई पिन डालें।",SCAM,additional_upi_refund,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0981,आपका पार्सल गोदाम में रुका है। 99 रुपये पुनः वितरण शुल्क अभी भरें: http://track-parcel-pay57.example/update,SCAM,additional_courier_fee,,yes,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0986,"वेतन 499 रुपये खाते XX9012 में आ गया। शेष 52,880 रुपये।",SAFE,additional_credit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0990,"आपका सिम 2 घंटे में बंद हो जाएगा, सत्यापन अधूरा है। अभी कॉल करें: 98XXXXXX29",SCAM,additional_sim_block,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0991,"आपका 2,999 रुपये का रिचार्ज सफल रहा। वैधता 28 दिन।",SAFE,additional_recharge,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
+SYN26-GEN0996,"खाते XX5678 से 2 Nov को 15,490 रुपये डेबिट हुए। यदि आपने नहीं किया तो कार्ड के पीछे दिए नंबर पर कॉल करें।",SAFE,additional_debit_alert,,no,hi,synthetic,SYN_C_CLAUDE_20261027,train
